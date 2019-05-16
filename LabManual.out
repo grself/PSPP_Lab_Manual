@@ -1,0 +1,93 @@
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}% 1
+\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}% 2
+\BOOKMARK [-1][]{part.1}{Introduction}{}% 3
+\BOOKMARK [-1][]{part.2}{Descriptive}{}% 4
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{part.2}% 5
+\BOOKMARK [1][-]{section.1.1}{1.1 Introduction}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{1.2 Discussion}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Hypothesis}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Data}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{1.3 Procedure}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Installing and Starting PSPP}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Importing Data}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Using PSPP}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Variables}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.5}{1.3.5 Menus}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.6}{1.3.6 Syntax Files}{section.1.3}% 16
+\BOOKMARK [1][-]{section.1.4}{1.4 Deliverable}{chapter.1}% 17
+\BOOKMARK [0][]{chapter.2}{2 Lab 02: Frequencies}{part.2}% 18
+\BOOKMARK [1][-]{section.2.1}{2.1 Introduction}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{2.2 Discussion}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Frequency Tables}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Visualizing Frequency}{section.2.2}% 22
+\BOOKMARK [1][-]{section.2.3}{2.3 Procedure}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Frequency Table}{section.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Histogram}{section.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Bar Chart}{section.2.3}% 26
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 Clustered Bar Chart}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.5}{2.3.5 Pie Chart}{section.2.3}% 28
+\BOOKMARK [1][-]{section.2.4}{2.4 Deliverable}{chapter.2}% 29
+\BOOKMARK [0][]{chapter.3}{3 Lab 03: Common Descriptive Measures}{part.2}% 30
+\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.2}{3.2 Discussion}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Hinges}{section.3.2}% 33
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Inter-Quartile Range}{section.3.2}% 34
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Kurtosis}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Mean}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Median}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.6}{3.2.6 Minimum/Maximum}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.7}{3.2.7 Mode}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.8}{3.2.8 N}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.9}{3.2.9 Quartiles}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.10}{3.2.10 Range}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.11}{3.2.11 Skew}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.12}{3.2.12 Standard Deviation}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.13}{3.2.13 Standard Error}{section.3.2}% 45
+\BOOKMARK [2][-]{subsection.3.2.14}{3.2.14 Standard Error of the Kurtosis}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.15}{3.2.15 Standard Error of the Skew}{section.3.2}% 47
+\BOOKMARK [2][-]{subsection.3.2.16}{3.2.16 Sum}{section.3.2}% 48
+\BOOKMARK [2][-]{subsection.3.2.17}{3.2.17 Variance}{section.3.2}% 49
+\BOOKMARK [1][-]{section.3.3}{3.3 Procedure}{chapter.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Frequency Table with Statistics}{section.3.3}% 51
+\BOOKMARK [1][-]{section.3.4}{3.4 Deliverable}{chapter.3}% 52
+\BOOKMARK [0][]{chapter.4}{4 Lab 04: Descriptives]}{part.2}% 53
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.2}{4.2 Discussion}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Descriptive Measures}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Z-Scores}{section.4.2}% 57
+\BOOKMARK [1][-]{section.4.3}{4.3 Procedure}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Descriptives}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Z-Scores}{section.4.3}% 60
+\BOOKMARK [1][-]{section.4.4}{4.4 Deliverable}{chapter.4}% 61
+\BOOKMARK [0][]{chapter.5}{5 Lab 05: Explore}{part.2}% 62
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.2}{5.2 Discussion}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Data Problems}{section.5.2}% 65
+\BOOKMARK [1][-]{section.5.3}{5.3 Procedure}{chapter.5}% 66
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Data Element Type}{section.5.3}% 67
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Duplicate Data}{section.5.3}% 68
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Missing Data}{section.5.3}% 69
+\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Activity 1: Missing Data}{section.5.3}% 70
+\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 Outliers}{section.5.3}% 71
+\BOOKMARK [2][-]{subsection.5.3.6}{5.3.6 Activity 2: Outliers}{section.5.3}% 72
+\BOOKMARK [2][-]{subsection.5.3.7}{5.3.7 Activity 3: Outliers}{section.5.3}% 73
+\BOOKMARK [1][-]{section.5.4}{5.4 Deliverable}{chapter.5}% 74
+\BOOKMARK [-1][]{part.3}{Inferential}{}% 75
+\BOOKMARK [-1][]{part.4}{Appendix}{}% 76
+\BOOKMARK [0][]{chapter.6}{6 Appendix}{part.4}% 77
+\BOOKMARK [1][-]{section.6.1}{6.1 Appendix A: Datasets}{chapter.6}% 78
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 bdims}{section.6.1}% 79
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 births}{section.6.1}% 80
+\BOOKMARK [2][-]{subsection.6.1.3}{6.1.3 cars}{section.6.1}% 81
+\BOOKMARK [2][-]{subsection.6.1.4}{6.1.4 email}{section.6.1}% 82
+\BOOKMARK [2][-]{subsection.6.1.5}{6.1.5 gifted}{section.6.1}% 83
+\BOOKMARK [2][-]{subsection.6.1.6}{6.1.6 cafe}{section.6.1}% 84
+\BOOKMARK [2][-]{subsection.6.1.7}{6.1.7 rivers}{section.6.1}% 85
+\BOOKMARK [1][-]{section.6.2}{6.2 Appendix B: Recoding Variables}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Background}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Recoding Variables With SOFA}{section.6.2}% 88
+\BOOKMARK [1][-]{section.6.3}{6.3 Appendix C: SOFA Exports}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Styles}{section.6.3}% 90
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Exporting a File}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Copy/Paste Output}{section.6.3}% 92
+\BOOKMARK [2][-]{subsection.6.3.4}{6.3.4 Reports}{section.6.3}% 93

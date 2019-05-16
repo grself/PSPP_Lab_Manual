@@ -1,0 +1,1802 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass scrreprt
+\options openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,abstractoff,BCOR=5mm,fontsize=11pt
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang american
+Lab 04: Descriptives]
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:lab04"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setcounter{figure}{10}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+NoCaseChange{Homo Sapiens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It is typical for a researcher to report a number of descriptive attributes of a dataset, like its mean or standard deviation and this lab describes how to generate that sort of statistical analysis.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Discussion
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Descriptive Measures
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The descriptive measures commonly reported are
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+These measures are described in 
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "ch:lab03"
+
+\end_inset
+
+ on page 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ch:lab03"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Kurtosis 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Mean 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Maximum Value 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Minimum Value 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Range 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Skewness 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Standard Deviation 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Standard Error 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Sum 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Variance 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Z-Scores
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "z-scores"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+A Z-Score is how many standard deviations
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+Standard Deviation is described on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab03_standard_deviation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ a data point lies above or below the mean. In other words, a Z-Score re-scales, or standardizes, the data points so they can be more easily compared. Here are a few facts about Z-Scores:
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+A z-score equal to 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ is a data point that is equal to the mean. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+A z-score less than 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ is a data point that is less than the mean. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+A z-score greater than 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ is a data point that is greater than the mean. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+A z-score equal to 
+\begin_inset Formula $ +1 $
+\end_inset
+
+ is a data point that is 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ standard deviation greater than the mean. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+A z-score equal to 
+\begin_inset Formula $ -1 $
+\end_inset
+
+ is a data point that is 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ standard deviation less than the mean. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+For example, imagine that a student took an exam and scored 
+\begin_inset Formula $ 15 $
+\end_inset
+
+. Is the a good score? It would depend on the mean and standard deviation for that exam. The easiest way to check is to convert the student's score of 
+\begin_inset Formula $ 15 $
+\end_inset
+
+ to a Z-Score, which accounts for both mean and standard deviation. If a score of 
+\begin_inset Formula $ 15 $
+\end_inset
+
+ is converted to a Z-Score of 
+\begin_inset Formula $ +1 $
+\end_inset
+
+ then the student scored higher than about 
+\begin_inset Formula $ 68\% $
+\end_inset
+
+ of the other students so that would be a good score.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Z-Scores can also be used to compare the results of two tests where the mean and standard deviation may be different. For example, imagine that a state changes the annual test that is given to fourth, sixth, and ninth graders. A particular student scored 
+\begin_inset Formula $ 40 $
+\end_inset
+
+ on the math portion in the fourth grade and then scored 
+\begin_inset Formula $ 30 $
+\end_inset
+
+ on the new text in the sixth grade. That would not necessary mean that the student is doing worse because the test may be harder. In order to compare those two test results a researcher would have to know the mean and standard deviation of the two tests. Again, converting the student's scores to Z-Scores would help determine whether the student is making progress. Imagine that for the fourth grade exam the student's Z-Score is 
+\begin_inset Formula $ -0.3 $
+\end_inset
+
+, or slightly below the mean, but on the sixth grade test the student's Z-Score is 
+\begin_inset Formula $ +0.3 $
+\end_inset
+
+, or slightly above the mean. Even though the raw scores seem to show a decrease in score the Z-Score reveals that the student is making above normal progress.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Calculating Z-Scores is a simple formula:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Formula $ Z = \frac{X - mean}{SD} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Where 
+\shape italic
+X
+\shape default
+ is a specific data point and 
+\shape italic
+SD
+\shape default
+ is the standard deviation of the dataset. Thus, if a dataset has a mean of 
+\begin_inset Formula $ 50 $
+\end_inset
+
+ and a standard deviation of 
+\begin_inset Formula $ 10 $
+\end_inset
+
+ then the data point 
+\begin_inset Formula $ 55 $
+\end_inset
+
+ has a Z-Score of 
+\begin_inset Formula $ +0.5 $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Formula $ +0.5 = \frac{55 - 50}{10} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Procedure
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Descriptives
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+bdims
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptives
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click the phrase 
+\shape italic
+navel (abdominal) girth
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the phrase 
+\shape italic
+navel (abdominal) girth
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box.) NOTE: This is displayed as 
+\begin_inset Quotes eld
+\end_inset
+
+nav.gi
+\begin_inset Quotes erd
+\end_inset
+
+ in the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box since that is the actual name of the variable. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Check the following 
+\begin_inset Quotes eld
+\end_inset
+
+Statistics
+\begin_inset Quotes erd
+\end_inset
+
+ options in the lower-right box: Mean, Standard Deviation, Minimum, and Maximum. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Uncheck all options at the bottom of the window. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+OK
+\end_layout
+
+\end_inset
+
+ to generate the descriptives. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab04_fig01.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating Descriptives
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_fig01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab04_fig02.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Navel Girth Descriptives
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_fig02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 1: Descriptives
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_act01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+bdims
+\shape default
+ dataset, produce the descriptives for 
+\shape italic
+age
+\shape default
+. Include the mean, standard deviation, minimum, and maximum statistics.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 2: Descriptives
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_act02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce the descriptives for 
+\shape italic
+age
+\shape default
+. Include the mean, standard deviation, minimum, and maximum statistics.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Z-Scores
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+gifted
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptives
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click the word 
+\shape italic
+motherIQ
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the word 
+\shape italic
+motherIQ
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box.) 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Check the following 
+\begin_inset Quotes eld
+\end_inset
+
+Statistics
+\begin_inset Quotes erd
+\end_inset
+
+ options in the lower-right box: Mean, Standard Deviation, Minimum, and Maximum. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Check the 
+\begin_inset Quotes eld
+\end_inset
+
+Save Z-scores of selected variables as new variables
+\begin_inset Quotes erd
+\end_inset
+
+ option at the bottom of the window. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+OK
+\end_layout
+
+\end_inset
+
+ to generate the descriptives. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab04_fig03.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating Descriptives
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_fig03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab04_fig04.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descriptives for Mother's IQ
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_fig04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+After the Descriptives are generated the Z-Scores for Mother's IQ are calculated and added to a new field in the dataset.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab04_fig05.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Z-Scores for Mother's IQ
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_fig05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The Z-Scores are in the last column on the right. For example, case one has Mother's IQ of 
+\begin_inset Formula $ 117 $
+\end_inset
+
+ and Z-Score of 
+\begin_inset Formula $ -0.18 $
+\end_inset
+
+ which is slightly below the mean for this dataset. Case four, on the other hand, has Mother's IQ of 
+\begin_inset Formula $ 131 $
+\end_inset
+
+ and Z-Score of 
+\begin_inset Formula $ +1.97 $
+\end_inset
+
+, which is significantly above the mean for this dataset.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 3: Z-Scores
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_act03"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+gifted
+\shape default
+ dataset, produce the Z-Scores for 
+\shape italic
+speak
+\shape default
+. Report the Z-Score for any case where the 
+\begin_inset Quotes eld
+\end_inset
+
+speak
+\begin_inset Quotes erd
+\end_inset
+
+ raw score is 
+\begin_inset Formula $ 18 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 4: Z-Scores
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab04_act04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce the Z-Scores for 
+\shape italic
+age
+\shape default
+. Report the Z-Score for any case where the 
+\begin_inset Quotes eld
+\end_inset
+
+age
+\begin_inset Quotes erd
+\end_inset
+
+ raw score is 
+\begin_inset Formula $ 30 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Deliverable
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Complete the following activities in this lab:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Number
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Name
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Page
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab04_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab04_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab04_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab04_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab04_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab04_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab04_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab04_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab04_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab04_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab04_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab04_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Consolidate the responses for all activities into a single document and submit that document for grading.
+\end_layout
+
+\end_body
+\end_document

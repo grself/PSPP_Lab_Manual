@@ -1,0 +1,3013 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass scrreprt
+\options openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,abstractoff,BCOR=5mm,fontsize=11pt
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang american
+Lab 03: Common Descriptive Measures
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:lab03"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setcounter{figure}{10}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+NoCaseChange{Homo Sapiens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+One of the goals of descriptive statistics is to summarize and characterize the data so data scientists can determine its value and whether further research is needed. Often a simple measure like comparing the mean and median for a dataset can indicate a problem with outliers or skew. There are many statistics that are reported as descriptives and this lab both defines and demonstrates how those statistics are generated with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+The information about calculated statistics in this lab is dependent on the datatypes discussed in Lab 1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Discussion
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Each of the following sections describe one commonly-used statistical measure.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Hinges
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_hinges"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Occasionally, the phrase 
+\begin_inset Quotes eld
+\end_inset
+
+Tukey's Hinges
+\begin_inset Quotes erd
+\end_inset
+
+ appears in statistical literature. The two hinges for a dataset are the medians for the lower half and the upper half of the data, but those halves also include the dataset median. For the simple dataset above, the lower hinge is the median of 
+\begin_inset Formula $ 5 $
+\end_inset
+
+, 
+\begin_inset Formula $ 7 $
+\end_inset
+
+, 
+\begin_inset Formula $ 10 $
+\end_inset
+
+, and 
+\begin_inset Formula $ 13 $
+\end_inset
+
+, or 
+\begin_inset Formula $ 8.5 $
+\end_inset
+
+. The upper hinge is the median of 
+\begin_inset Formula $ 13 $
+\end_inset
+
+, 
+\begin_inset Formula $ 17 $
+\end_inset
+
+, 
+\begin_inset Formula $ 19 $
+\end_inset
+
+, and 
+\begin_inset Formula $ 23 $
+\end_inset
+
+, or 
+\begin_inset Formula $ 18 $
+\end_inset
+
+. Quartiles and hinges usually have about the same accuracy but quartiles are more commonly used.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Inter-Quartile Range
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_iqr"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Another measure that is occasionally used is the Inter-Quartile Range (
+\shape italic
+IQR
+\shape default
+); that is, the difference between 
+\shape italic
+Q1
+\shape default
+ and 
+\shape italic
+Q3
+\shape default
+. This is used to produce a better range for an element in a dataset that includes extreme outliers.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Kurtosis
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_kurt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+One way to mathematically describe a normal distribution is to calculate the length of the tails of a bell curve, and that is called its 
+\shape italic
+excess kurtosis
+\shape default
+. For a normal distribution the excess kurtosis is 
+\begin_inset Formula $ 0.00 $
+\end_inset
+
+, a positive excess kurtosis would indicate longer tails while a negative excess kurtosis would indicate shorter tails. Intuitively, many people believe the excess kurtosis represents the 
+\begin_inset Quotes eld
+\end_inset
+
+peaked-ness
+\begin_inset Quotes erd
+\end_inset
+
+ of the curve since longer tails would tend to lead to a more peaked graph; however, excess kurtosis is a measure of the data outliers, which would be only present in the tails of the graph; so excess kurtosis is not directly indicative of the the 
+\begin_inset Quotes eld
+\end_inset
+
+sharpness
+\begin_inset Quotes erd
+\end_inset
+
+ of the peak. It is difficult to categorically state that some level of excess kurtosis is good or bad. In some cases, data that form a graph with longer tails are desired but in other cases they would be a problem.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Following are three examples of excess kurtosis. Notice that as the excess kurtosis increases the tails become longer.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab03_fig02.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kurtosis in a Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_fig02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Mean
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_mean"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The mean is calculated by adding all of the data items together and then dividing that sum by the number of items, which is taught in elementary school as the 
+\shape italic
+average
+\shape default
+. For example, given the dataset: 
+\begin_inset Formula $ 6, 8, 9 $
+\end_inset
+
+, the total is 
+\begin_inset Formula $ 23 $
+\end_inset
+
+ and that divided by 
+\begin_inset Formula $ 3 $
+\end_inset
+
+ (the number of items) is 
+\begin_inset Formula $ 7.66 $
+\end_inset
+
+; so the mean of 
+\begin_inset Formula $ 6, 8, 9 $
+\end_inset
+
+ is 
+\begin_inset Formula $ 7.66 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+If a dataset has outliers, or values that are unusually large or small, then the mean is often skewed such that it no longer represents the 
+\begin_inset Quotes eld
+\end_inset
+
+average
+\begin_inset Quotes erd
+\end_inset
+
+ value. As an example, the length (in miles) of the 
+\begin_inset Formula $ 141 $
+\end_inset
+
+ longest rivers in North America ranges from 
+\begin_inset Formula $ 135 $
+\end_inset
+
+ to 
+\begin_inset Formula $ 3710 $
+\end_inset
+
+ and the mean of these values is 
+\begin_inset Formula $ 591.18 $
+\end_inset
+
+ miles
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+These data are found in the 
+\shape italic
+rivers
+\shape default
+ dataset.
+\end_layout
+
+\end_inset
+
+. Unfortunately, because the lengths of the top few rivers are disproportionately higher than the rest of the values in the dataset (their lengths are 
+\shape italic
+outliers
+\shape default
+), the mean is skewed upward. One way compensate for outliers is to use a 
+\shape italic
+trimmed mean
+\shape default
+ (sometimes called a 
+\shape italic
+truncated mean
+\shape default
+). A trimmed mean is calculated by removing a specified number of values from both the top and bottom of the dataset and then finding the mean of the remaining values. In the case of the rivers dataset, if 
+\begin_inset Formula $ 5\% $
+\end_inset
+
+ of the values are trimmed from the data (or 
+\begin_inset Formula $ 2.5\% $
+\end_inset
+
+ from both the top and bottom) then the remaining items create a 
+\begin_inset Quotes eld
+\end_inset
+
+trimmed
+\begin_inset Quotes erd
+\end_inset
+
+ mean of 
+\begin_inset Formula $ 518.79 $
+\end_inset
+
+. Trimming the dataset effectively removes both upper and lower outliers and produces a much more reasonable central value for this dataset. In actual practice, a trimmed mean is not commonly used since it is difficult to know how much to trim from the dataset and the resulting mean may be just as skewed as if no values were trimmed; thus, when outliers are suspected, the best 
+\begin_inset Quotes eld
+\end_inset
+
+middle
+\begin_inset Quotes erd
+\end_inset
+
+ term to report is the median.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Median
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_median"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The median is found by listing all of the data items in numeric order and then mechanically finding the middle item. For example, using the dataset 
+\begin_inset Formula $ 6, 8, 9 $
+\end_inset
+
+, the middle item (or median) is 
+\begin_inset Formula $ 8 $
+\end_inset
+
+. If the dataset has an even number of items, then the median is calculated as the mean between the two middle items. For example, in the dataset 
+\begin_inset Formula $ 6, 8, 9, 13 $
+\end_inset
+
+ the median is 
+\begin_inset Formula $ 8.5 $
+\end_inset
+
+, which is the mean of 
+\begin_inset Formula $ 8 $
+\end_inset
+
+ and 
+\begin_inset Formula $ 9 $
+\end_inset
+
+, the two middle terms.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The median is very useful in cases where the dataset has outliers. As an example of using a median rather than a mean, consider the dataset 
+\begin_inset Formula $ 5, 6, 7, 8, 30 $
+\end_inset
+
+. The mean is 
+\begin_inset Formula $ (5+6+7+8+30)/5 = 56/5 = 11.2 $
+\end_inset
+
+. However, 
+\begin_inset Formula $ 11.2 $
+\end_inset
+
+ is clearly much higher than most of the other numbers in that dataset since one outlier, 
+\begin_inset Formula $ 30 $
+\end_inset
+
+, is significantly driving up the mean. A much better representation of the central term for this dataset would be 
+\begin_inset Formula $ 7 $
+\end_inset
+
+, which is the median. To re-visit the river lengths introduced above, the median of the dataset is 
+\begin_inset Formula $ 425 $
+\end_inset
+
+, which is much more representative of the 
+\begin_inset Quotes eld
+\end_inset
+
+middle
+\begin_inset Quotes erd
+\end_inset
+
+ length than using either the mean or the trimmed mean.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+As another example, suppose a newspaper reporter wanted to find the 
+\begin_inset Quotes eld
+\end_inset
+
+average
+\begin_inset Quotes erd
+\end_inset
+
+ wage for a group of factory workers. The ten workers in that factory all have an annual salary of 
+\begin_inset Formula $ \$25,000 $
+\end_inset
+
+; however, the supervisor has a salary of 
+\begin_inset Formula $ \$125,000 $
+\end_inset
+
+. In the newspaper article, the supervisor is quoted as saying that the employees in his company have an average salary of 
+\begin_inset Formula $ \$34,090 $
+\end_inset
+
+. That is correct if the mean of all those salaries is reported, but that number is clearly higher than any sort of reasonable 
+\begin_inset Quotes eld
+\end_inset
+
+average
+\begin_inset Quotes erd
+\end_inset
+
+ salary for workers in the factory due to the one outlier (the supervisor's salary). In this case, the median of 
+\begin_inset Formula $ \$25,000 $
+\end_inset
+
+ would be much more representative of the 
+\begin_inset Quotes eld
+\end_inset
+
+average
+\begin_inset Quotes erd
+\end_inset
+
+ salary. The median is typically reported for salaries, home values, and other datasets where one or two outliers would significantly distort the reported 
+\begin_inset Quotes eld
+\end_inset
+
+middle
+\begin_inset Quotes erd
+\end_inset
+
+ value.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+If the dataset contains no outliers and is normally distributed
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+The Normal Data Distribution, along with the terms skew and kurtosis, is covered in Lab 1.
+\end_layout
+
+\end_inset
+
+, then the mean and median are the same; but if there are outliers then these two measures become separated, often by a large amount. Consider the rivers dataset mentioned in the 
+\shape italic
+Mean
+\shape default
+ section above. That dataset has a mean of 
+\begin_inset Formula $ 591.18 $
+\end_inset
+
+ and a median of 
+\begin_inset Formula $ 425 $
+\end_inset
+
+. This difference, 
+\begin_inset Formula $ 166.18 $
+\end_inset
+
+, is about 
+\begin_inset Formula $ 28\% $
+\end_inset
+
+ of the mean and is significant. The size of this difference would tell a researcher that there are outliers or other influences that are skewing the data.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Minimum/Maximum
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_min_max"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The minimum and maximum values of an element in a dataset are, as the name implies, the smallest and largest values. As an example, the dataset 
+\begin_inset Formula $ 6, 7, 8, 9, 10 $
+\end_inset
+
+ has a minimum of 
+\begin_inset Formula $ 6 $
+\end_inset
+
+ and a maximum of 
+\begin_inset Formula $ 10 $
+\end_inset
+
+. The 
+\shape italic
+rivers
+\shape default
+ dataset has a minimum of 
+\begin_inset Formula $ 135 $
+\end_inset
+
+ and a maximum of 
+\begin_inset Formula $ 3710 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Mode
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_mode"
+
+\end_inset
+
+ The mode is used to describe the center of nominal or ordinal data and is nothing more than the value that is most often found in the dataset. For example, if a question asked respondents to select their zip code from a list of five local codes and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 12345 $
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ was selected more often than any other then that would be the mode for that item. Calculating the mode is no more difficult than counting the number of times the various values are found in the dataset and reporting the value found most frequently.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+As an example, the 
+\shape italic
+cars
+\shape default
+ dataset includes the following types of drive trains:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Type
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Frequency
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Formula $ 4 $
+\end_inset
+
+WD 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+2 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+Front 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+43 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+Rear 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+9 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Since the most common type of drive train is 
+\begin_inset Quotes eld
+\end_inset
+
+Front
+\begin_inset Quotes erd
+\end_inset
+
+ that would be the mode for this data item.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It does not make much sense to calculate the mean or median for nominal or ordinal data since those are categories; however, reports frequently contain the mean for Likert-style questions (ordinal data) by equating each level of response to a number and then calculating the mean of those numbers. For example, imagine that a student housing survey asked respondents to select among 
+\begin_inset Quotes eld
+\end_inset
+
+Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree
+\begin_inset Quotes erd
+\end_inset
+
+ for a statement like 
+\begin_inset Quotes eld
+\end_inset
+
+I like the food in the cafeteria.
+\begin_inset Quotes erd
+\end_inset
+
+ That is clearly ordinal data and while 
+\begin_inset Quotes eld
+\end_inset
+
+Agree
+\begin_inset Quotes erd
+\end_inset
+
+ is somehow better than 
+\begin_inset Quotes eld
+\end_inset
+
+Disagree
+\begin_inset Quotes erd
+\end_inset
+
+ it would be wrong to try to quantify that difference as 
+\begin_inset Quotes eld
+\end_inset
+
+one point better.
+\begin_inset Quotes erd
+\end_inset
+
+ Sometimes, though, researchers will assign a point value to those responses like 
+\begin_inset Quotes eld
+\end_inset
+
+Strongly Disagree
+\begin_inset Quotes erd
+\end_inset
+
+ is one point, 
+\begin_inset Quotes eld
+\end_inset
+
+Disagree
+\begin_inset Quotes erd
+\end_inset
+
+ is two points, and so forth. Then they will calculate the mean for the responses on a survey item and report something like 
+\begin_inset Quotes eld
+\end_inset
+
+The question about the food in the cafeteria had a mean of 
+\begin_inset Formula $ 3.24 $
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ It would be impossible to know what that means. Are students 
+\begin_inset Formula $ 0.24 $
+\end_inset
+
+ units above 
+\begin_inset Quotes eld
+\end_inset
+
+Neutral
+\begin_inset Quotes erd
+\end_inset
+
+ on liking the cafeteria food? Thus, the mean or median should not be reported for nominal or ordinal data.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+N
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_n"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+One of the simplest of measures is nothing more than the number of items in a dataset. For example, the dataset 
+\begin_inset Formula $ 5, 7, 13, 22 $
+\end_inset
+
+ contains 
+\begin_inset Formula $ 4 $
+\end_inset
+
+ items. In statistics, the number of items in a dataset is usually represented by the letter 
+\shape italic
+N
+\shape default
+, therefore, in the simple dataset in this paragraph, 
+\begin_inset Formula $ N = 4 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Quartiles
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_quartiles"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+A measure that is closely related to the median is the first and third quartile. The first quartile (
+\shape italic
+Q1
+\shape default
+) is the score that splits the lowest 
+\begin_inset Formula $ 25\% $
+\end_inset
+
+ of the values from the rest and the third quartile (
+\shape italic
+Q3
+\shape default
+) splits the highest 
+\begin_inset Formula $ 25\% $
+\end_inset
+
+ of the values from the rest. The second quartile (
+\shape italic
+Q2
+\shape default
+) is the same as the median and, normally, the term 
+\begin_inset Quotes eld
+\end_inset
+
+median
+\begin_inset Quotes erd
+\end_inset
+
+ is used rather than 
+\shape italic
+Q2
+\shape default
+. For example, consider this dataset:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Formula $ 5, 7, 10, 13, 17, 19, 23 $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The median of this dataset is 
+\begin_inset Formula $ 13 $
+\end_inset
+
+ because three values are smaller and three are larger. The first quartile is 
+\begin_inset Formula $ 7 $
+\end_inset
+
+, which is the median for the lower half of the values (not including 
+\begin_inset Formula $ 13 $
+\end_inset
+
+, the median of the dataset); or the score that splits the lowest 
+\begin_inset Formula $ 25 \% $
+\end_inset
+
+ from the rest of the data. The third quartile is 
+\begin_inset Formula $ 19 $
+\end_inset
+
+, which is the median for the upper half of the scores; or the score that splits the highest 
+\begin_inset Formula $ 25 \% $
+\end_inset
+
+ from the rest of the data.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Range
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_range"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The range of an element in a dataset is the maximum value minus the minimum value. As an example, the dataset 
+\begin_inset Formula $ 6, 7, 8, 9, 10 $
+\end_inset
+
+ has a range of 
+\begin_inset Formula $ 10-6 $
+\end_inset
+
+ or 
+\begin_inset Formula $ 4 $
+\end_inset
+
+. The 
+\shape italic
+rivers
+\shape default
+ dataset has a range of 
+\begin_inset Formula $ 3575 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Skew
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_skew"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The second numerical measure of a normal distribution that is frequently reported is its 
+\shape italic
+skew
+\shape default
+, which is a measure of the symmetry of the curve about the mean of the data. The normal distribution in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "int:normal_dist_figure"
+
+\end_inset
+
+ has a skew of 
+\begin_inset Formula $ 0.00 $
+\end_inset
+
+. A positive skew indicates that the tail on the right side is longer, which means that there are several data points on the far right side of the graph 
+\begin_inset Quotes eld
+\end_inset
+
+pulling
+\begin_inset Quotes erd
+\end_inset
+
+ the tail out that direction. A negative skew indicates that the tail on the left side of the graph is longer. Following are three examples of skew:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab03_fig03.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Skew in a Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_fig03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Standard Deviation
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_standard_deviation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The standard deviation of a dataset is a number that indicates how much variation there is in the data; or how 
+\begin_inset Quotes eld
+\end_inset
+
+scattered
+\begin_inset Quotes erd
+\end_inset
+
+ the data are from the mean. In general, the larger the standard deviation then the more variation there is in the data. A dataset with a small standard deviation would create a sharply peaked normal distribution curve while a large standard deviation would create a flatter curve.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+The concept of the normal distribution curve was presented in Lab 01.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Once a standard deviation is calculated, then about 
+\begin_inset Formula $ 68.2 $
+\end_inset
+
+% of the samples will lie closer to the mean than that number. To put it another way, one standard deviation explains about 
+\begin_inset Formula $ 68.2 $
+\end_inset
+
+% of the variance from the mean. To show this concept graphically, consider the following graph of the scores on an examination:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab03_fig01.jpg
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Illustration Of Standard Deviation
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_fig01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The mean of this distribution is marked with a vertical line in the center of the bell curve. One standard deviation up and one standard deviation down are marked by two other vertical lines. The shaded area under the curve would include about 
+\begin_inset Formula $ 68.2 $
+\end_inset
+
+% of all scores for this dataset. In the same way, two standard deviations from the mean would include about 
+\begin_inset Formula $ 95.4 $
+\end_inset
+
+% of the data points; and three standard deviations would include more than 
+\begin_inset Formula $ 99.7 $
+\end_inset
+
+% of the data points (the second and third standard deviation are not indicated on the graph).
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+As one last example, imagine a class with 
+\begin_inset Formula $ 500 $
+\end_inset
+
+ students where the professor administered an examination worth 
+\begin_inset Formula $ 100 $
+\end_inset
+
+ points. If the mean score for that examination was 
+\begin_inset Formula $ 80 $
+\end_inset
+
+ and the standard deviation was 
+\begin_inset Formula $ 5 $
+\end_inset
+
+, then the professor would know that the scores were fairly tightly grouped (
+\begin_inset Formula $ 341 $
+\end_inset
+
+ scores of the 
+\begin_inset Formula $ 500 $
+\end_inset
+
+ (
+\begin_inset Formula $ 68.2 $
+\end_inset
+
+%) were between 
+\begin_inset Formula $ 75-85 $
+\end_inset
+
+, within 
+\begin_inset Formula $ 5 $
+\end_inset
+
+ points of the mean), and this would probably be good news for the professor. On the other hand, if the mean score was 
+\begin_inset Formula $ 60 $
+\end_inset
+
+ and the standard deviation was 
+\begin_inset Formula $ 15 $
+\end_inset
+
+, then the scores were 
+\begin_inset Quotes eld
+\end_inset
+
+all over the place' (more precisely, 
+\begin_inset Formula $ 341 $
+\end_inset
+
+ scores of the 
+\begin_inset Formula $ 500 $
+\end_inset
+
+ were between 
+\begin_inset Formula $ 45 $
+\end_inset
+
+-
+\begin_inset Formula $ 75 $
+\end_inset
+
+), and that may mean that the professor would have to re-think how the lesson was taught or that the examination itself was flawed.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It is difficult to categorically state whether a specific standard deviation is good or bad; it is simply a measure of how concentrated the data are around the mean. For something like a manufacturing process where the required tolerance for the parts being produced is tight then the standard deviation for the weights of random samples pulled off of the line must be very small; that is, the parts must be as nearly identical as possible. However, in another context, the standard deviation may be quite large. Imagine measuring the time it takes a group of high school students to run 
+\begin_inset Formula $ 100 $
+\end_inset
+
+ yards. Some would be very fast but others would be much slower and the standard deviation for that data would likely be large.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Standard Error
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_standard_error"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+If multiple samples are taken of a large population the mean of each of those samples will be slightly different. The 
+\begin_inset Quotes eld
+\end_inset
+
+standard error of the mean
+\begin_inset Quotes erd
+\end_inset
+
+ is the same as the standard deviation for a single sample. As an example, imagine that the following dataset are all of the test scores for 
+\begin_inset Formula $ 100 $
+\end_inset
+
+ students who took the same departmental final examination last fall: 34, 44, 46, 46, 50, 52, 52, 53, 54, 54, 55, 56, 57, 58, 58, 58, 59, 60, 60, 62, 62, 62, 62, 64, 64, 64, 65, 65, 65, 66, 67, 68, 68, 68, 68, 69, 69, 69, 69, 70, 70, 70, 70, 70, 70, 71, 71, 71, 72, 72, 73, 73, 73, 73, 74, 75, 75, 75, 75, 75, 76, 77, 77, 77, 78, 78, 78, 78, 79, 79, 79, 79, 79, 79, 79, 80, 80, 80, 80, 81, 81, 82, 85, 86, 86, 86, 86, 86, 87, 87, 87, 90, 92, 93, 95, 95, 97, 100, 100, 100
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Of course, with only 
+\begin_inset Formula $ 100 $
+\end_inset
+
+ data points it would be very easy to calculate various statistics with the entire population, but that would not be possible if the sample were tens-of-thousands so a sample would be drawn at random from the entire population and it would be assumed that the sample would represent the entire population. Imagine that, at random, the following samples of ten were drawn from the population above:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\family sans
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family sans
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="6" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+Sample 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+Sum 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+Mean 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 50, 56, 64, 72, 72, 75, 79, 80, 80, 93 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 721 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 72.1 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 58, 69, 70, 75, 78, 79, 80, 81, 86, 95 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 771 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 77.1 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 46, 58, 66, 70, 73, 75, 79, 85, 95, 100 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 747 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 74.7 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 54, 60, 62, 66, 68, 70, 70, 71, 71, 73 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 665 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 66.5 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 69, 72, 73, 76, 77, 77, 79, 79, 79, 81 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 762 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\family sans
+
+\lang american
+
+\begin_inset Formula $ 76.2 $
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The mean of the randomly-drawn sample should be the same as the mean for the entire population. However, it would be possible that the sample included only the high scores and the mean for that sample would be far different from the mean for a sample of low scores. The table above lists five different means depending on the samples drawn.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The actual mean for this dataset is 
+\begin_inset Formula $ 72.14 $
+\end_inset
+
+. The standard error of the mean is 
+\begin_inset Formula $ 4.12 $
+\end_inset
+
+ so the means of samples of ten values drawn at random would be expected to fall between 
+\begin_inset Formula $ 59.78 $
+\end_inset
+
+ and 
+\begin_inset Formula $ 84.50 $
+\end_inset
+
+, which is three standard errors below and above the mean.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The standard error is a useful way to estimate how accurately the mean of a sample reflects the mean of the entire population.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Standard Error of the Kurtosis
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_standard_error_of_the_kurt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Kurtosis is defined earlier in this lab. Like the mean of a randomly-drawn sample would be expected to differ from the mean of the entire population (expressed as the Standard Error), the kurtosis of a randomly-drawn sample would be expected to differ from the kurtosis of the entire population. That expected difference would be expressed as the Standard Error of the Kurtosis.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Standard Error of the Skew
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_standard_error_of_the_skew"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Skew is defined earlier in this lab. Like the mean of a randomly-drawn sample would be expected to differ from the mean of the entire population (expressed as the Standard Error), the skew of a randomly-drawn sample would be expected to differ from the skew of the entire population. That expected difference would be expressed as the Standard Error of the Skew.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Sum
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_sum"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Another descriptor of a dataset that is occasionally reported is the sum, which is nothing more than the values of all of the items in an element added together. As an example, the dataset 
+\begin_inset Formula $ 6, 7, 8 $
+\end_inset
+
+ has a sum of 
+\begin_inset Formula $ 21 $
+\end_inset
+
+. The 
+\shape italic
+rivers
+\shape default
+ dataset has a sum of 
+\begin_inset Formula $ 83357 $
+\end_inset
+
+. It should be rather obvious that the sum by itself does not offer much information without knowing the number of items in the dataset and the range of the values.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Variance
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_variance"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Statistically, the variance is a measure of how far a sample is spread out from the mean. A dataset with a wide variance would have values that are spread out 
+\begin_inset Quotes eld
+\end_inset
+
+all over the place
+\begin_inset Quotes erd
+\end_inset
+
+ while a dataset with a smaller variance would be more uniform. This is about the same definition that was used for Standard Deviation (page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab03_standard_deviation"
+
+\end_inset
+
+). In fact, there is a statistical relationship between variance and standard deviation: the standard deviation of a dataset is the square root of the variance. It is natural to wonder, then, which should be used. A standard deviation is measured with the same units as the dataset. So, for example, if some element of a dataset were measuring the height of all incoming students in inches then the standard deviation would also be in inches. Variance, on the other hand, is measured in square units so it is more difficult to compare the variance with the raw data. To be blunt, the variance has great utility in advanced statistics classes where students are considering theory but for most undergraduate classes where statistics are being used as a tool rather than the object of the study then the standard deviation is all that is needed.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Procedure
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Labs Two through Six will generate most of the above measures so for this lab only a Frequency Table, as found in Lab Two, is used to generate a few simple statistics in this lab.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Frequency Table with Statistics
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+email
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Frequencies
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click the word 
+\shape italic
+image
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+image
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the word 
+\shape italic
+image
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box.) 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Check 
+\shape italic
+Mean
+\shape default
+, 
+\shape italic
+Minimum
+\shape default
+, and 
+\shape italic
+Maximum
+\shape default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Statistics
+\begin_inset Quotes erd
+\end_inset
+
+ options in the lower-right box. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+OK
+\end_layout
+
+\end_inset
+
+ to generate the frequency table. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab03_fig04.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Frequency Table With Statistics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_fig04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab03_fig05.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Email Image Frequency Table With Statistics
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_fig05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab03_fig05"
+
+\end_inset
+
+ shows some simple statistics for the 
+\shape italic
+image
+\shape default
+ data element.
+\begin_inset Marginal
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+Statics are only generated for Interval or Ratio data.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 1: Frequency Table With Statistics
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_act01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+gifted
+\shape default
+ dataset, produce a frequency table for 
+\shape italic
+eduTV
+\shape default
+ (the number of hours children spend watching educational television programs each week). Include the 
+\shape italic
+mean
+\shape default
+, 
+\shape italic
+minimum
+\shape default
+, and 
+\shape italic
+maximum
+\shape default
+ values with the table.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 2: Frequency Table With Statistics
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab03_act02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a frequency table for 
+\shape italic
+ptysize
+\shape default
+ (the size of the dining party). Include the 
+\shape italic
+mean
+\shape default
+, 
+\shape italic
+minimum
+\shape default
+, and 
+\shape italic
+maximum
+\shape default
+ values with the table.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Deliverable
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Complete the following activities in this lab:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Number
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Name
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Page
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab03_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab03_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab03_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab03_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab03_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab03_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Consolidate the responses for all activities into a single document and submit that document for grading.
+\end_layout
+
+\end_body
+\end_document

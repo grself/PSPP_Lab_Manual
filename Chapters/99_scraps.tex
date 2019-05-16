@@ -1,0 +1,202 @@
+\section{Miscellaneous Notes}
+% the text width in a normal line is 11.80737cm
+% To make a TODO note, start a comment with two or more consecutive capital letters.
+
+\section{Captions and Labels}
+%  All lables are the same as the captions, but lowercase and no punctuation. 
+%  Also, all spaces are filled with underscores.
+%  Occasionally, labels may also need a bit of verbiage to differentiate 
+%  them from each other, for example, there will be lots of ``example'' 
+%  sections. In that case, put additional verbiage at the end of the label.
+%  Labels are referenced book-wide, not just chapter-wide. So prefix 
+%  the 2-digit chapter number at the start of the label (Appendicies 
+%  will use ``ap''). Also, use the following label designations:
+%	ch: -- chapter
+%	sec: -- section
+%	subsec: -- sub-section
+%	para: -- paragraph
+%	tab: -- table
+%	eq: -- equation
+%	fig: -- figure
+%	lst: -- code listing
+%	soln: -- the solution to an equation
+%	A full label would look something like: \label{03:tab:truth_table_for_or}
+%  The number of degrees for label position within an image node are:
+%	E=0
+%	NE=45
+%	N=90
+%	NW=135
+%	W=180
+%	SW=225
+%	S=270
+%	SE=315
+
+\section{My Macros}
+Shft+F1: List Inline
+
+%************************************************************
+\section{acronyms}
+% Define a new acronym in "Contents.tex"
+% The definition takes the form: \acro{POS}{Product of Sums}
+% Enter them in alphabetic order since they will be printed in the Table of Acronymns 
+% 	in the same order that they are listed on the Contents page
+%***************************************************************
+\ac{ACR}   % prints the acronym text and then the acronym in brackets 
+\acl{ACR}  % prints the long version (the definition without acronym)
+\acf{ACR}  % prints the full name of the acronym plus the acronym
+\acs{ACR}  % prints the short version (no definition)
+\acp{ACR}  % prints the plural version
+\acfp{ACR} % prints the full version in plural
+\aclp{ACR} % prints the long version in plural
+
+%*****************************************************
+\section{Truth Table}
+%*****************************************************
+\begin{table}[H]
+	\sffamily
+	\newcommand{\head}[1]{\textcolor{white}{\textbf{#1}}}		
+	\begin{center}
+		\rowcolors{2}{gray!10}{white} % Color every other line a light gray
+		\begin{tabular}{ccc} 
+			\rowcolor{black!75}
+			\multicolumn{2}{c}{\head{Inputs}} & \head{Output} \\
+			A & B & Y \\
+			\hline
+			0 & 0 & 0 \\
+			0 & 1 & 1 \\
+			1 & 0 & 1 \\
+			1 & 1 & 1 
+		\end{tabular}
+	\end{center}
+	\caption{Truth Table for OR}
+	\label{03:tab:truth_table_for_or}
+\end{table}
+
+
+%******************************************************
+\section{3-Line Equation}
+%******************************************************
+\begin{align}
+	\label{03:eq:identity_example}
+	1101_2 &= 123 \\
+	\nonumber
+	&= 123 \\
+	\nonumber
+	&= 123
+\end{align}
+
+
+\section{Solving an Equation Step-by-step}
+\begin{align}
+	\label{04:soln:solving_equation_one}
+	AB+BC(B+C) && \text{Original Expression} \\
+	\nonumber
+	AB+BBC+BCC && \text{Distribute BC} \\
+	\nonumber
+	AB+BC+BC && \text{Idempotence: BB=B and CC=C} \\
+	\nonumber
+	AB+BC && \text{Idempotence: BC+BC=BC} \\
+	\nonumber
+	B(A+C) && \text{Factor} \\
+\end{align}
+
+%**************************************************************************
+\section{Margin Paragraph} 
+%**************************************************************************
+% Use to create a sidebar paragraph out in the margin
+\marginpar{Whatever.}
+
+%***************************************************************************
+\section{Text Box}
+%***************************************************************************
+% Creates a nice boxed text with a title and main section
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
+	% Upper half of box: my "title" area
+	\textcolor{blue}{\textbf{Interesing Note}}
+	% Lower half of the box: the content
+	\tcblower
+	Whatever.
+\end{tcolorbox}
+
+%***************************************************************************
+\section{ToDo}
+%***************************************************************************
+% Create a ToDo note in the text. This also creates a new clickable TODO
+% section in the ``structure'' box on the left side of the page.
+%TODO This is a todo note.
+
+%***************************************************************************
+\section{Code Snip}
+%***************************************************************************
+\lstset{ %
+  caption={caption},
+  label=SL:lst:listing01,
+  numbers=left,
+  language=Verilog
+}
+\begin{lstlisting}
+  Code here
+\end{lstlisting}
+
+%***************************************************************************
+\section{Code From File For Text Area}
+%***************************************************************************
+\lstset{ %
+  caption={add2 Solution},
+  label=L03:lst:add2,
+  basicstyle={},
+  upquote=false, 
+  numbers=left,
+  language=Verilog
+}
+\lstinputlisting[firstline=7]{ckt/lab03.add2.v}
+
+\section{Code From File For Code Snip}
+%***************************************************************************
+\lstset{ %
+  caption={add2 Solution},
+  label=L03:lst:add2,
+  basicstyle={\ttfamily},
+  upquote=true,
+  numbers=none,
+  language=teX
+}
+\lstinputlisting[firstline=7]{ckt/lab03.add2.v}
+
+%***************************************************************************
+\section{List In Line}
+%***************************************************************************
+\lstinline[columns=fixed]|code|
+
+%***************************************************************************
+\section{Wrap Figure}
+%**************************************************************************
+\begin{wrapfigure}{O}{0.2\textwidth}
+	\caption{} % No text, wraps badly in very narrow space (does print fig number)
+	\label{BM:fig:gray_code_disc} 
+	\centering
+	\includegraphics[width=0.2\textwidth]{gfx/gray_code_disc} 
+\end{wrapfigure}
+
+
+%***************************************************************************
+\section{Regular Figure}
+%**************************************************************************
+\begin{figure}[H]
+  \centering
+  \frame{\includegraphics{ckt/lab_hello.png}}
+  \caption{Executing ``Hello World''}
+  \label{lab01:fig:executing_hello_world}
+\end{figure}
+
+%***************************************************************************
+\section{Style Guide}
+%**************************************************************************
+All instances of the term PSPP should be formatted as \acs{PSPP}
+
+For menu selections:
+Click \textsc{\fbox{Analyze $ \rightarrow $ Descriptive Statistics $ \rightarrow $ Frequencies}}
+
+All dataset and variable names should be italicized
+
+Names of elements in windows, like text boxes, should be in normal font but surrounded by quotes

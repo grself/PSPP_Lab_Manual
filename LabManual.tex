@@ -1,0 +1,123 @@
+%*******************************************************
+% Lab Manual -- BASV 316: PSPP
+%*******************************************************
+\RequirePackage{fix-cm} % fix some latex issues see: http://texdoc.net/texmf-dist/doc/latex/base/fixltx2e.pdf
+\documentclass[ twoside,openright,titlepage,numbers=noenddot,headinclude,
+footinclude=true,cleardoublepage=empty,abstractoff, 
+BCOR=5mm,fontsize=11pt,american]{scrreprt}
+
+%*******************************************************
+% Note: Make all your adjustments in here
+%*******************************************************
+\input{LabManual-config}
+
+%*******************************************************
+% Bibliographies
+%*******************************************************
+%\addbibresource{Bibliography.bib}
+%\addbibresource[label=ownpubs]{AMiede_Publications.bib}
+
+%*******************************************************
+% Hyphenation
+%*******************************************************
+%\hyphenation{put special hyphenation here}
+
+%*******************************************************
+% GO!GO!GO! MOVE IT!
+%*******************************************************
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{american} % american ngerman
+%\renewcommand*{\bibname}{new name}
+%\setbibpreamble{}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+%*******************************************************
+% Frontmatter
+%*******************************************************
+%\include{FrontBackmatter/DirtyTitlepage}
+\include{FrontBackmatter/Titlepage}
+\include{FrontBackmatter/Titleback}
+%\cleardoublepage\include{FrontBackmatter/Dedication}
+\cleardoublepage\include{FrontBackmatter/Foreword}
+%\cleardoublepage\include{FrontBackmatter/Abstract}
+%\cleardoublepage\include{FrontBackmatter/Publications}
+%\cleardoublepage\include{FrontBackmatter/Acknowledgments}
+\pagestyle{scrheadings}
+\cleardoublepage\include{FrontBackmatter/Contents}
+
+%*******************************************************
+% Mainmatter
+%*******************************************************
+\cleardoublepage\pagenumbering{arabic}
+%\setcounter{page}{90}
+
+% The following is needed to make the text for manual Parts visible
+\definecolor{Black}{cmyk}{75,68,67,90}
+
+% use \cleardoublepage here to avoid problems with pdfbookmark
+\cleardoublepage
+\ctparttext{This part contains only one lab exercise and that provides instructions for downloading and installing PSPP. Also included is an introduction to the different types of data and some simple data transformations available in PSPP.}
+\part{Introduction}
+%\cleardoublepage\include{Chapters/01_intro}
+
+\ctparttext{Descriptive statistics attempt to describe data and include
+  tools like frequency counts, means, and crosstabs. This part contains five labs that explore several different descriptive statistics available in PSPP.}
+\part{Descriptive}
+\cleardoublepage\include{Chapters/01_intro}
+\cleardoublepage\include{Chapters/02_descriptives_frequencies}
+\cleardoublepage\include{Chapters/03_descriptives_measures}
+\cleardoublepage\include{Chapters/04_descriptives_descriptives}
+\cleardoublepage\include{Chapters/05_descriptives_explore}
+
+\ctparttext{Inferential statistics attempt to infer some characteristic
+  of an entire population from probabilities calculated in a sample and include tools like correlation, regression, and comparing means. This part contains eight labs that explore several different inferential statistics available in PSPP.}
+\part{Inferential}
+%\cleardoublepage\include{Chapters/01_intro}
+
+
+
+%\include{Chapters/Chapter01}
+%\cleardoublepage
+%\ctparttext{Labs are essential to understanding the concepts of
+%  research methodology. The labs presented in this manual are
+%  conducted with SOFA.}
+%\part{Lab Manual}
+%\part{SOFA Labs}
+%\cleardoublepage\include{Chapters/sofa_01_intro}
+%\cleardoublepage\include{Chapters/sofa_02_centMeas}
+%\cleardoublepage\include{Chapters/sofa_03_dispersion}
+%\cleardoublepage\include{Chapters/sofa_04_visDispersion}
+%\cleardoublepage\include{Chapters/sofa_05_freqTables}
+%\cleardoublepage\include{Chapters/sofa_06_visFreq}
+%\cleardoublepage\include{Chapters/sofa_07_correlation}
+%\cleardoublepage\include{Chapters/sofa_08_regression}
+%\cleardoublepage\include{Chapters/sofa_09_hypTestNonPara}
+%\cleardoublepage\include{Chapters/sofa_10_hypTestPara}
+%\cleardoublepage\include{Chapters/sofa_11_final}
+
+%*******************************************************
+% Backmatter
+%*******************************************************
+%\appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
+%\cleardoublepage
+\part{Appendix}
+\include{Chapters/90_Appendix}
+%*******************************************************
+% Other Stuff in the Back
+%*******************************************************
+%\cleardoublepage\include{FrontBackmatter/Bibliography}
+%\cleardoublepage\include{FrontBackmatter/Declaration}
+%\cleardoublepage\include{FrontBackmatter/Colophon}
+
+% Add two blank pages at the end
+\leavevmode\thispagestyle{empty}\newpage
+\leavevmode\thispagestyle{empty}\newpage
+%*******************************************************
+% Game Over: Restore, Restart, or Quit?
+%*******************************************************
+\end{document}

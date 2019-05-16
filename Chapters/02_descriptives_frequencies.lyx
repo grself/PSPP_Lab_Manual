@@ -1,0 +1,3731 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+chapter{Lab 02: Frequencies}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:lab02"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setcounter{figure}{10}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+NoCaseChange{Homo Sapiens}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Nominal and Ordinal data items are normally reported in frequency tables where the counts for a particular item are displayed and this lab explores frequency tables and visualization techniques that are used to make frequencies easier to comprehend.
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Subsection
+Frequency Tables
+\end_layout
+
+\begin_layout Standard
+A frequency table simply lists a count of the number of times that some nominal or ordinal data item appears in a dataset. These types of tables are common around election time when polls report the number of people who voted for or against some proposition. As an example, here is a frequency table for the passenger rating in the 
+\shape italic
+cars
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig01
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of Passengers Per Car
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above table shows that 
+\begin_inset Formula $ 10 $
+\end_inset
+
+ cars in the dataset were rated for four passengers, 
+\begin_inset Formula $ 28 $
+\end_inset
+
+ for five passengers, and 
+\begin_inset Formula $ 16 $
+\end_inset
+
+ for six passengers, for a total of 
+\begin_inset Formula $ 54 $
+\end_inset
+
+ rated cars. The table also shows the various row percentages so the researcher could report that 
+\begin_inset Formula $ 18.5\% $
+\end_inset
+
+ of the cars were rated for four passengers. The 
+\begin_inset Quotes eld
+\end_inset
+
+Valid Percent
+\begin_inset Quotes erd
+\end_inset
+
+ column indicates the percentage of cases when missing cases are removed. In this dataset there were no missing cases so the Valid Percent column is the same as the 
+\begin_inset Quotes eld
+\end_inset
+
+Percent
+\begin_inset Quotes erd
+\end_inset
+
+ column.
+\end_layout
+
+\begin_layout Standard
+A second example of a frequency table was created from the 
+\shape italic
+email
+\shape default
+ dataset. This frequency table shows the number of images that were attached to messages.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig02
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Images Per Message
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig02"
+
+\end_inset
+
+ shows that 
+\begin_inset Formula $ 97.5\% $
+\end_inset
+
+ of 
+\begin_inset Formula $ 3154 $
+\end_inset
+
+ email messages contained no images while a small number of messages contained one or more images.
+\end_layout
+
+\begin_layout Standard
+Frequency tables are only useful for nominal or ordinal data-type items. To illustrate why this is true, imagine creating a survey for all of the students at the University of Arizona and including 
+\begin_inset Quotes eld
+\end_inset
+
+age
+\begin_inset Quotes erd
+\end_inset
+
+ (interval-type data) as one of the survey questions. Attempting to create a frequency table for the ages of the respondents would have, potentially, more than 
+\begin_inset Formula $ 65 $
+\end_inset
+
+ rows since student ages would range from about 
+\begin_inset Formula $ 15 $
+\end_inset
+
+ to more than 
+\begin_inset Formula $ 80 $
+\end_inset
+
+ and each row would report the number of students for that age. While a frequency table that large could be created it would have so many rows that it would be virtually unusable.
+\end_layout
+
+\begin_layout Subsection
+Visualizing Frequency
+\end_layout
+
+\begin_layout Standard
+There are many ways to visualize frequency data and people often find that graphs aid in comprehension. This lab introduces the visualization tools available in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Histogram
+\end_layout
+
+\begin_layout Standard
+A histogram is a graph that shows how often various responses were selected on a survey. These are often presented as a graphic representation of the statistical data found in a frequency table in order to aid in understanding. Histograms are only used for data that are interval or ratio in nature, for example, age or height.
+\end_layout
+
+\begin_layout Standard
+As an example of a histogram, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig07"
+
+\end_inset
+
+ shows the mother's age from the 
+\shape italic
+births
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig07
+	width 95line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram of Mother's Age
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig07"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that there is not a separate bar for each age; rather, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ has clustered three years into the same bar. Thus, there is a bar that combines 
+\begin_inset Formula $ 20 $
+\end_inset
+
+-
+\begin_inset Formula $ 22 $
+\end_inset
+
+ and not separate bars for 
+\begin_inset Formula $ 20 $
+\end_inset
+
+, 
+\begin_inset Formula $ 21 $
+\end_inset
+
+, and 
+\begin_inset Formula $ 22 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As another example, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig08"
+
+\end_inset
+
+ shows a histogram for baby's weight from the 
+\shape italic
+births
+\shape default
+ dataset.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+Using a histogram aids a researcher in determining if a dataset is normally distributed and skewed. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig08"
+
+\end_inset
+
+ shows a normally distributed dataset since there is a clear peak in the middle trailing off on both sides. It also shows a negative skew since the tails on the left side of the peak are longer. Lab 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "int:normal_distribution"
+
+\end_inset
+
+ on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "int:normal_distribution"
+
+\end_inset
+
+ discusses the shape of a normal distribution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig08
+	width 95line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Histogram of Baby's Weight
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig08"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig07"
+
+\end_inset
+
+, each bar represents a range of weights so any weight between 
+\begin_inset Formula $ 6 $
+\end_inset
+
+ and 
+\begin_inset Formula $ 6.33 $
+\end_inset
+
+ pounds is clustered in a single bar.
+\end_layout
+
+\begin_layout Subsubsection
+Bar Chart
+\end_layout
+
+\begin_layout Standard
+A bar chart is used to display the frequency count for ordinal or nominal data. There are technical differences between a bar chart and a histogram but for the purposes of this lab manual they can be considered identical displays for different types of data. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig09"
+
+\end_inset
+
+ is a bar chart showing the prevalence of various drive trains in the 
+\shape italic
+cars
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig09
+	width 75line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prevelance of Types of Drive Trains
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig09"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig10"
+
+\end_inset
+
+ shows the maturity level of the mothers in the 
+\shape italic
+births
+\shape default
+ dataset and unsurprisingly indicates that most mothers are younger.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig10
+	width 75line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maturity of Mothers
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Clustered Bar Chart
+\end_layout
+
+\begin_layout Standard
+A clustered bar chart displays two or more variables and is used to display ordinal or nominal data. In general, clustered bar charts can be difficult to interpret and should be avoided. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig11"
+
+\end_inset
+
+ is a clustered bar chart that shows the incidence of premature births by the mother's smoking habit in the 
+\shape italic
+births
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig11
+	width 95line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Permature Births By Smoking Habit
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig11"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig12"
+
+\end_inset
+
+ illustrates the problem with a clustered bar chart. This is a chart that shows the number of passengers for each type of car in the 
+\shape italic
+cars
+\shape default
+ dataset. Notice that no large cars have four or five passengers and no small cars have six passengers so those bars are missing and that can make the chart difficult to interpret.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig12
+	width 95line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of Passengers By Car Type
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig12"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Pie Chart
+\end_layout
+
+\begin_layout Standard
+A pie chart is commonly used to display nominal or ordinal data; however, pie charts are notoriously difficult to understand, especially if the writer uses some sort of 
+\begin_inset Formula $ 3 $
+\end_inset
+
+-D effect or 
+\begin_inset Quotes eld
+\end_inset
+
+exploded
+\begin_inset Quotes erd
+\end_inset
+
+ slices. The human brain seems able to easily compare the 
+\shape italic
+heights
+\shape default
+ of two or more bars, as in histograms and bar charts, but the 
+\shape italic
+areas
+\shape default
+ of two or more slices of a pie chart are difficult to compare. For this reason, pie charts should be avoided in research reports. If they are used at all, they should only illustrate one slice's relationship to the whole, not comparing one slice to another; and no more than four or five slices should be presented on one chart.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig13"
+
+\end_inset
+
+ shows the types of numbers found in messages in the 
+\shape italic
+email
+\shape default
+ dataset. This pie chart is easy to interpret since there are only three slices and each slice is easy to compare to the whole.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig13
+	width 70line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Types of Numbers in Email Messages
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig13"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As an extreme example of a poorly used pie chart, consider Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_fig14"
+
+\end_inset
+
+. Even ignoring the problem of the numbered labels overlapping, making them impossible to read, the slices are so numerous and small that it is impossible to differentiate between them. For example, the 
+\begin_inset Quotes eld
+\end_inset
+
+one
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+two
+\begin_inset Quotes erd
+\end_inset
+
+ slices are impossible to compare. For this pie chart, about all that can be stated is that most email messages have zero dollar signs.
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig14
+	width 70line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of Times a Dollar Sign Used in Email Messages
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig14"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Procedure
+\end_layout
+
+\begin_layout Subsection
+Frequency Table
+\end_layout
+
+\begin_layout Standard
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+email
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Frequencies
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+format
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+format
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the word 
+\shape italic
+format
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variables
+\begin_inset Quotes erd
+\end_inset
+
+ box.) 
+\end_layout
+
+\begin_layout Enumerate
+Uncheck all 
+\begin_inset Quotes eld
+\end_inset
+
+Statistics
+\begin_inset Quotes erd
+\end_inset
+
+ options in the lower-right box. 
+\end_layout
+
+\begin_layout Enumerate
+It is safe to explore the 
+\begin_inset Quotes eld
+\end_inset
+
+Charts
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Frequency Tables
+\begin_inset Quotes erd
+\end_inset
+
+ options but do not select any of those options, they will be demonstrated later. 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+OK
+\end_layout
+
+\end_inset
+
+ to generate the frequency table. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig03
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Frequency Table
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig04
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Email Format Frequency Table
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity 1: Frequency Table
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+births
+\shape default
+ dataset, produce a frequency table for 
+\shape italic
+gender
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Activity 2: Frequency Table
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a frequency table for 
+\shape italic
+meal
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Histogram
+\end_layout
+
+\begin_layout Standard
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+bdims
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+Graphs 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Histogram
+\end_layout
+
+\end_inset
+
+
+\shape default
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+Histograms can also be specified as an optional chart when creating a Frequency Table.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+age
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+age
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variable
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the word 
+\shape italic
+age
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variable
+\begin_inset Quotes erd
+\end_inset
+
+ box.) 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+OK
+\end_layout
+
+\end_inset
+
+ to generate the histogram. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig15
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Histogram
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig15"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig16
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Age Histogram
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig16"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity 3: Histogram
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act03"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+email
+\shape default
+ dataset, produce a histogram for 
+\shape italic
+numChar
+\shape default
+ (the number of characters, in thousands, in the email message).
+\end_layout
+
+\begin_layout Subsubsection
+Activity 4: Histogram
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act04"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a histogram for 
+\shape italic
+age
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Bar Chart
+\end_layout
+
+\begin_layout Standard
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+cars
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+Graphs 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Barchart
+\end_layout
+
+\end_inset
+
+
+\shape default
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+Bar charts can also be specified as an optional chart when creating a Frequency Table.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+passengers
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+passengers
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Category Axis
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+OK
+\end_layout
+
+\end_inset
+
+ to generate the bar chart. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig17
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Bar Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig17"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig18
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Passengers Bar Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig18"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity 5: Bar Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act05"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+email
+\shape default
+ dataset, produce a bar chart for 
+\shape italic
+numbers
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Activity 6: Bar Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act06"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a barchart for 
+\shape italic
+meal
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Clustered Bar Chart
+\end_layout
+
+\begin_layout Standard
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+births
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+Graphs 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Barchart
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+premie
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+premie
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Category Axis
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+mature
+\shape default
+ in the left column and then click the right-arrow button near the bottom of the window to move 
+\shape italic
+mature
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Category Cluster
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+OK
+\end_layout
+
+\end_inset
+
+ to generate the bar chart. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig19
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Clustered Bar Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig19"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig20
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clustered Bar Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig20"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity 7: Clustered Bar Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cars
+\shape default
+ dataset, produce a clustered bar chart using 
+\shape italic
+drive train
+\shape default
+ by 
+\shape italic
+type
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Activity 8: Clustered Bar Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act08"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a clustered bar chart for 
+\shape italic
+meal
+\shape default
+ by 
+\shape italic
+sex
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+Pie Chart
+\end_layout
+
+\begin_layout Standard
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+cars
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Frequencies
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click the word 
+\shape italic
+driveTrain
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+driveTrain
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Variable(s)
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. 
+\end_layout
+
+\begin_layout Enumerate
+Uncheck all of the 
+\begin_inset Quotes eld
+\end_inset
+
+Statistics
+\begin_inset Quotes erd
+\end_inset
+
+ boxes in the lower-right text box. 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+Charts
+\end_layout
+
+\end_inset
+
+ to open the charts options window. 
+\end_layout
+
+\begin_layout Enumerate
+Select 
+\begin_inset Quotes eld
+\end_inset
+
+Draw pie charts
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+Continue
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+OK
+\end_layout
+
+\end_inset
+
+ to generate the pie chart. 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig21
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating a Pie Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig21"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\begin_inset Graphics 
+	filename gfx/lab02_fig22
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pie Chart
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_fig22"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Activity 9: Pie Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act09"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cars
+\shape default
+ dataset, produce a pie using 
+\shape italic
+passengers
+\shape default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Activity 10: Pie Chart
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab02_act10"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, produce a pie chart for 
+\shape italic
+meal
+\shape default
+ by 
+\shape italic
+sex
+\shape default
+.
+\end_layout
+
+\begin_layout Section
+Deliverable
+\end_layout
+
+\begin_layout Standard
+Complete the following activities in this lab:
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="11" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+Number
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+Name
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\series bold
+Page
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act06"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act06"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act06"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act07"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act07"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act07"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act08"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act08"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act08"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act09"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act09"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act09"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab02_act10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab02_act10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab02_act10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consolidate the responses for all activities into a single document and submit that document for grading.
+\end_layout
+
+\end_body
+\end_document

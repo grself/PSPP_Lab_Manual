@@ -1,0 +1,3569 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass scrreprt
+\options openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,abstractoff,BCOR=5mm,fontsize=11pt
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang american
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "int:introduction"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% This just prints the text and line width for me.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%textwidth: 
+\backslash
+printinunitsof{in}
+\backslash
+prntlen{
+\backslash
+textwidth}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%linewidth: 
+\backslash
+printinunitsof{in}
+\backslash
+prntlen{
+\backslash
+linewidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% For this document, text width = line width = 4.65015in
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Statistical analysis is the core of nearly all research projects and researchers have a wide variety of statistical tools that they can use, like 
+\shape italic
+SPSS
+\shape default
+, 
+\shape italic
+SAS
+\shape default
+, and 
+\shape italic
+R
+\shape default
+. Unfortunately, these analysis tools are expensive or difficult to master so this lab manual introduces 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+, an open source statistical analysis program that is free of charge and easy to use. Even though 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ looks like an acronym it is not. Those letters are intended to imply that it is the opposite of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+SPSS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ in the sense that it is provided free of charge but is compatible with the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+SPSS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ language and datasets.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Before downloading and diving into 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ there are two important background fundamentals that must be considered: hypothesis and data.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Discussion
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Hypothesis
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "intro:Hypothesis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+A hypothesis is an attempted explanation for some observation and is often used as a starting point for further investigation. For example, imagine that a physician notices that babies born of women who smoke seem to be lighter in weight than for women who do not smoke. That could lead to a hypothesis like 
+\begin_inset Quotes eld
+\end_inset
+
+smoking during pregnancy is linked to light birth-weights.
+\begin_inset Quotes erd
+\end_inset
+
+ As another example, imagine that a restaurant owner notices that tipping seems to be higher on weekends than through the week. That might lead to a hypothesis that 
+\begin_inset Quotes eld
+\end_inset
+
+the size of tips is higher on weekends than weekdays.
+\begin_inset Quotes erd
+\end_inset
+
+ After creating a hypothesis a researcher would gather data and then statistically analyze that data to determine 
+\shape italic
+if
+\shape default
+ the hypothesis is true but additional investigation may be needed to explain 
+\shape italic
+why
+\shape default
+ it is true.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+In a research project there are usually two related competing hypotheses: the 
+\shape italic
+Null Hypothesis
+\shape default
+ and the 
+\shape italic
+Alternate Hypothesis
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Null Hypothesis (abbreviated 
+\begin_inset Formula $ H_{0} $
+\end_inset
+
+). This is sometimes described as the 
+\begin_inset Quotes eld
+\end_inset
+
+skeptical
+\begin_inset Quotes erd
+\end_inset
+
+ view; that is, the explanation for some observed phenomenon is mistaken. For example, the null hypothesis for the smoking mother observation mentioned above would be 
+\begin_inset Quotes eld
+\end_inset
+
+smoking has no effect on a baby's weight
+\begin_inset Quotes erd
+\end_inset
+
+ and for the tipping observation would be 
+\begin_inset Quotes eld
+\end_inset
+
+there is no difference in tipping on the weekend.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Alternate Hypothesis (abbreviated 
+\begin_inset Formula $ H_{a} $
+\end_inset
+
+). This is the suggested explanation for an observed phenomenon. In the case of the smoking mother mentioned above the alternative hypothesis would be that 
+\begin_inset Quotes eld
+\end_inset
+
+smoking causes a decrease in birth weight.
+\begin_inset Quotes erd
+\end_inset
+
+ This is called the 
+\begin_inset Quotes eld
+\end_inset
+
+alternate
+\begin_inset Quotes erd
+\end_inset
+
+ because it is different from the status quo which is encapsulated in the null hypothesis. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+One commonly used example of the difference between the null and alternate hypothesis comes from the trial court system. When a jury deliberates about the guilt of a defendant they start from a position of 
+\begin_inset Quotes eld
+\end_inset
+
+innocent until proven guilty,
+\begin_inset Quotes erd
+\end_inset
+
+ which would be the null hypothesis. The prosecutor is asking the jury to accept the alternate hypothesis, or 
+\begin_inset Quotes eld
+\end_inset
+
+the defendant committed the crime.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+For the most part, researchers will never conclude that the alternate hypothesis is true. There are always confounding variables that are not considered but could be the cause of some observation. For example, in the smoking mothers example mentioned above, even if the evidence indicates that babies born to smokers are lighter in weight the researcher could not state conclusively that smoking caused that observation. Perhaps non-smoking mothers had better health care, perhaps they had better diets, perhaps they exercised more, or any of a number of other reasonable explanations not related to smoking.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+For that reason, the result of a research project is normally reported with one of two phrases similar to these:
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\shape italic
+The null hypothesis is rejected.
+\shape default
+ If the evidence indicates that there is a significant difference between the status quo and whatever was observed then the null hypothesis would be rejected. For the 
+\begin_inset Quotes eld
+\end_inset
+
+tipping
+\begin_inset Quotes erd
+\end_inset
+
+ example above, if the researcher found a significant difference in the amount of money tipped on weekends compared to weekdays then the null hypothesis (that is, tipping is the same on weekdays and weekends) would be rejected. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\shape italic
+The null hypothesis cannot be rejected.
+\shape default
+ If the evidence indicates that there is no significant difference between the status quo and whatever was observed then the researcher would report that the null hypothesis could not be rejected. For example, if there was no significant difference in the birth weights of babies born to smokers and non-smokers then the researcher failed to reject the null hypothesis. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Often a research hypothesis is based on a prediction rather than an observation and that hypothesis can be tested to see if there is any significant difference between it and the null hypothesis. Imagine a hypothesis like 
+\begin_inset Quotes eld
+\end_inset
+
+walking one mile a day for one month decreases blood pressure.
+\begin_inset Quotes erd
+\end_inset
+
+ A researcher could easily test this by measuring the blood pressure of a group of volunteers, have them walk a mile every day for a month, and then measure their blood pressure at the end of the experiment to see if there was any significant difference.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "intro:TypesOfData"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Types of Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are four types of data, divided into two main groups, and it is important to understand the difference between them since that determines appropriate statistical tests to be used in data analysis.
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "app:a"
+
+\end_inset
+
+, on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "app:a"
+
+\end_inset
+
+, lists all of the datasets used in this lab manual and specifies the type of data each contains.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Qualitative
+\series default
+. Qualitative data groups observations into a limited number of categories; for example, type of pet (cat, dog, bird, etc.) or place of residence (Arizona, California, etc.). Because qualitative data do not have characteristics like means or standard deviations, they are analyzed using non-parametric tests, as described in Lab 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "hyp:nonparametric"
+
+\end_inset
+
+ on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "hyp:nonparametric"
+
+\end_inset
+
+. Qualitative data can be further divided into two sub-types, nominal and ordinal.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Nominal
+\series default
+. Nominal data are categories that do not overlap and have no meaningful order, they are merely labels for attributes. Examples of nominal data include occupations (custodial, accounting, sales, etc.) and blood type (A, B, AB, O). A special subcategory of nominal data is binary, or dichotomous, where there are only two possible responses, like 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+. Nominal data are sometimes stored in a database using numbers but they cannot be treated like numeric data. For example, binary data, like 
+\begin_inset Quotes eld
+\end_inset
+
+Do you rent or own your home?
+\begin_inset Quotes erd
+\end_inset
+
+ can be stored as 
+\begin_inset Quotes eld
+\end_inset
+
+1 = rent, 2 = own
+\begin_inset Quotes erd
+\end_inset
+
+ but the numbers in this case have no numeric significance and could be replaced by words like 
+\begin_inset Quotes eld
+\end_inset
+
+Rent
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Own.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Ordinal
+\series default
+. Ordinal data, like nominal, are categorical data but, unlike nominal, the categories imply some sort of order (which is why it is called 
+\begin_inset Quotes eld
+\end_inset
+
+ordinal
+\begin_inset Quotes erd
+\end_inset
+
+ data). One example of ordinal data is the 
+\begin_inset Quotes eld
+\end_inset
+
+star
+\begin_inset Quotes erd
+\end_inset
+
+ rating system for movies. It is clear that a five-star movie is somehow better than a four-star movie but there is no way to quantify the difference between those two categories. As another example, it is common for hospital staff members to ask patients to rate their pain level on a scale of one to ten. If a patient reports a pain level of 
+\begin_inset Quotes eld
+\end_inset
+
+seven
+\begin_inset Quotes erd
+\end_inset
+
+ but after some sort of treatment later reports a pain level of 
+\begin_inset Quotes eld
+\end_inset
+
+five
+\begin_inset Quotes erd
+\end_inset
+
+ then the pain has clearly decreased but it would be impossible to somehow quantify the exact difference in those two levels. Ordinal scales are most commonly used for Likert-type survey questions where the responses are selections like 
+\begin_inset Quotes eld
+\end_inset
+
+Strongly Agree
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Agree
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Neutral
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Disagree
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Strongly Disagree
+\begin_inset Quotes erd
+\end_inset
+
+. Ordinal data are also used when numeric data are grouped. For example, if a dataset included respondents' ages then those numbers could be grouped into categories like 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 20-29 $
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 30-39 $
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+ Those groups would typically be stored in the dataset as a single number so maybe 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 2 $
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ would represent the ages 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 20-29 $
+\end_inset
+
+,
+\begin_inset Quotes erd
+\end_inset
+
+ which would be ordinal data. 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Quantitative
+\series default
+. Quantitative data are numbers, typically counts or measures, like a person's age, a tree's height, or the number of widgets sold. Quantitative data are measured with scales that have equal divisions so the difference between any two values can be calculated. Quantitative data are discrete if they are represented by integers, like the count of words in a document, or continuous if they are represented by fractional numbers, like a person's height. Because quantative data has characteristics like means and standard deviations, they are analyzed using parametric tests, as described in Lab 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "hyp:parametric"
+
+\end_inset
+
+ on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "hyp:parametric"
+
+\end_inset
+
+. Quantitative data can be further divided into two sub-types, interval and ratio
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ lumps both Interval and Ratio data into a single type called 
+\begin_inset Quotes eld
+\end_inset
+
+Scale.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Interval
+\series default
+. Interval data use numbers to represent quantities where the distance between any two quantities can be calculated but there is no true zero point on the scale. One example is a temperature scale where the difference between 
+\begin_inset Formula $ 80 $
+\end_inset
+
+°and 
+\begin_inset Formula $ 90 $
+\end_inset
+
+°is calculated to be the same as the difference between 
+\begin_inset Formula $ 60 $
+\end_inset
+
+°and 
+\begin_inset Formula $ 70 $
+\end_inset
+
+°. It is important to note that interval data do not include any sort of true zero point, thus zero degrees Celsius does not mean 
+\begin_inset Quotes eld
+\end_inset
+
+no temperature,
+\begin_inset Quotes erd
+\end_inset
+
+ and without a zero point it is not reasonable to make a statement like 
+\begin_inset Formula $ 20 $
+\end_inset
+
+°is twice as hot as 
+\begin_inset Formula $ 10 $
+\end_inset
+
+°.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Ratio
+\series default
+. Ratio data, like interval data, use numbers to describe a specific measurable distance between two quantities; however, unlike interval data, ratio data have a true zero point. A good example of the use of ratio data is the sales report for an automobile dealership. Because the data are a simple count of the number of automobiles sold it is possible to compare one month to another. Also, since the scale has a true zero point (it is possible to have zero sales) it is possible to state that one month had twice the sales of another. 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+
+\lang american
+Shape of Data
+\end_layout
+
+\begin_layout Paragraph
+
+\lang american
+About The Normal Distribution (Bell Curve)
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "int:normal_distribution"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+When the quantitative data gathered from some statistical project are plotted on a graph they often form a 
+\begin_inset Quotes eld
+\end_inset
+
+normal distribution
+\begin_inset Quotes erd
+\end_inset
+
+ (sometimes called a 
+\begin_inset Quotes eld
+\end_inset
+
+bell curve
+\begin_inset Quotes erd
+\end_inset
+
+ due to its shape). As an example, consider the Scholastic Aptitude Test (SAT) which is administered to more than 
+\begin_inset Formula $ 1.5 $
+\end_inset
+
+ million high school students every year. Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig01"
+
+\end_inset
+
+ was created with fake data but illustrates the results expected of a typical SAT administration.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig01.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+SAT scores lie between 
+\begin_inset Formula $ 400 $
+\end_inset
+
+ and 
+\begin_inset Formula $ 1600 $
+\end_inset
+
+ as listed across the X-Axis and the number of students who earn each score is plotted. Since the most common score is 
+\begin_inset Formula $ 1000 $
+\end_inset
+
+ that score is at the peak of the curve. Very few students scored above 
+\begin_inset Formula $ 1300 $
+\end_inset
+
+ or below 
+\begin_inset Formula $ 650 $
+\end_inset
+
+ and the curve is near the lower bound beyond those points. This illustrates a normal distribution where most scores are bunched near the center of the graph with only a few at either extreme.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The normal distribution is important because it permits researchers to test hypothesis about the sample. For example, perhaps a researcher hypothesized that the students in university 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ had a higher graduation rate than at university 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ because their SAT scores were higher. Because SAT scores have a normal distribution the researcher could use specific tests, like a t-test, to try to support the hypothesis. However, if the data were not normally distributed then the researcher would need to know that and select a different group of statistical tests.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang american
+Excess Kurtosis
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+One way to mathematically describe a normal distribution is to calculate the length of the tails of a bell curve, and that is called its 
+\shape italic
+excess kurtosis
+\shape default
+. For a normal distribution the excess kurtosis is 
+\begin_inset Formula $ 0.00 $
+\end_inset
+
+, a positive excess kurtosis would indicate longer tails while a negative excess kurtosis would indicate shorter tails. Intuitively, many people believe the excess kurtosis represents the 
+\begin_inset Quotes eld
+\end_inset
+
+peaked-ness
+\begin_inset Quotes erd
+\end_inset
+
+ of the curve since longer tails would tend to lead to a more peaked graph; however, excess kurtosis is a measure of the data outliers, which would be only present in the tails of the graph; so excess kurtosis is not directly indicative of the the 
+\begin_inset Quotes eld
+\end_inset
+
+sharpness
+\begin_inset Quotes erd
+\end_inset
+
+ of the peak. It is difficult to categorically state that some level of excess kurtosis is good or bad. In some cases, data that form a graph with longer tails are desired but in other cases they would be a problem.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Following are three examples of excess kurtosis. Notice that as the excess kurtosis increases the tails become longer.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig02.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Kurtosis in a Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig10"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\lang american
+Skew
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The second numerical measure of a normal distribution that is frequently reported is its 
+\shape italic
+skew
+\shape default
+, which is a measure of the symmetry of the curve about the mean of the data. The normal distribution in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig01"
+
+\end_inset
+
+ has a skew of 
+\begin_inset Formula $ 0.00 $
+\end_inset
+
+. A positive skew indicates that the tail on the right side is longer, which means that there are several data points on the far right side of the graph 
+\begin_inset Quotes eld
+\end_inset
+
+pulling
+\begin_inset Quotes erd
+\end_inset
+
+ the tail out that direction. A negative skew indicates that the tail on the left side of the graph is longer. Following are three examples of skew:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig03.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Skew in a Normal Distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig13"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Procedure
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Installing and Starting PSPP
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are versions of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ available for Windows, MacOS, and Linux; so whatever operating system is being used there is a version that will work. The 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ downloads can be found at:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.gnu.org/software/pspp/get.html
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The download and installation process is fairly straightforward so there is no additional information about that here. Students should contact their instructor if they have trouble downloading or installing 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Importing Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+For simplicity, data files that are already prepared and useable 
+\begin_inset Quotes eld
+\end_inset
+
+out of the box
+\begin_inset Quotes erd
+\end_inset
+
+ are made available with this lab manual
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ can read and save 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+SPSS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ data files so students can load datasets in that format directly into 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ without further processing.
+\end_layout
+
+\end_inset
+
+. Therefore, the 
+\begin_inset Quotes eld
+\end_inset
+
+Import
+\begin_inset Quotes erd
+\end_inset
+
+ feature will not be considered in this lab, but students who want to know more about importing data can find more information online.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Students should create a single folder for all labs and store the data files in that folder. The datasets
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "app:a"
+
+\end_inset
+
+, on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "app:a"
+
+\end_inset
+
+, details the structure and contents of all datasets used in this manual.
+\end_layout
+
+\end_inset
+
+ for all of the activities in this manual are available in a ZIP file located at:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+https://goo.gl/hA04Gg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Download the 
+\begin_inset Quotes eld
+\end_inset
+
+Data Files
+\begin_inset Quotes erd
+\end_inset
+
+ for 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+myVersion
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+myTime
+\end_layout
+
+\end_inset
+
+, and extract all of the 
+\series bold
+.SAV
+\series default
+ files to a folder and then open them as needed.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The following datasets should be available to complete the labs in this manual:
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+bdims 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+births 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+cafe 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+cars 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+email 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+gifted 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+rivers 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The description for all datasets can be found in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Using PSPP
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+To open a dataset, click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+File 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Open
+\end_layout
+
+\end_inset
+
+
+\shape default
+. For example, to open the 
+\shape italic
+bdims
+\shape default
+ dataset:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+File 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Open
+\end_layout
+
+\end_inset
+
+
+\shape default
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+On the 
+\begin_inset Quotes eld
+\end_inset
+
+Select File
+\begin_inset Quotes erd
+\end_inset
+
+ screen, click 
+\shape italic
+bdims.sav
+\shape default
+ and then click 
+\begin_inset Quotes eld
+\end_inset
+
+Open
+\begin_inset Quotes erd
+\end_inset
+
+ at the bottom of the screen. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+When a dataset is first opened in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ it is presented in a spreadsheet-like view. For example, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig05"
+
+\end_inset
+
+ shows the top 
+\begin_inset Formula $ 10 $
+\end_inset
+
+ rows of the cars dataset after it was first opened.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig05.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The Top Of The Cars Data Table
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig05"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 1
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_act01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+cafe
+\shape default
+ dataset. Take a screen capture of the first ten rows of that data table. It should look something like Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig05"
+
+\end_inset
+
+, which shows the top 
+\begin_inset Formula $ 10 $
+\end_inset
+
+ rows of the 
+\shape italic
+cars
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Variables
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+At the bottom of the data window are two buttons used to change the window from Data View to Variable View.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig06.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data/Variable View Buttons
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig06"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The Variable View lists all of the variables in the dataset along with the attributes for those variables.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab01_fig07.png
+	width 90line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data/Variable View Buttons
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_fig07"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig07"
+
+\end_inset
+
+ shows the first six attributes for the variables in the 
+\shape italic
+births
+\shape default
+ dataset, but all of the attributes are described below.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Variable
+\series default
+ is simply a one-up number assigned by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ when the dataset is created. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Name
+\series default
+ is the name of the variable. In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig07"
+
+\end_inset
+
+, Variable one is named 
+\begin_inset Quotes eld
+\end_inset
+
+fage.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Type
+\series default
+ is the type of data the variable contains. 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ permits the following types of data: 
+\shape italic
+Numeric
+\shape default
+, 
+\shape italic
+Comma
+\shape default
+, 
+\shape italic
+Dot
+\shape default
+, 
+\shape italic
+Scientific Notation
+\shape default
+, 
+\shape italic
+Date
+\shape default
+, 
+\shape italic
+Dollar
+\shape default
+, 
+\shape italic
+Custom Currency
+\shape default
+, and 
+\shape italic
+String
+\shape default
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+The labs in this manual use only 
+\shape italic
+numeric
+\shape default
+, 
+\shape italic
+date
+\shape default
+, and 
+\shape italic
+string
+\shape default
+ types of data.
+\end_layout
+
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Width
+\series default
+ and 
+\series bold
+Decimal
+\series default
+ is how much data is stored. For numeric data the Width is the size of the integer portion of the number while the Decimal attribute is the size of number's decimal portion. For 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ the size indicates how many places are displayed, not the size of the number. For example, the number 
+\begin_inset Formula $ 999 $
+\end_inset
+
+ has a width of three since there are three places. For string data the width is the number of characters the variable can contain. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Label
+\series default
+ is a label displayed in reports to make it easier to understand. For example, variable one is named 
+\begin_inset Quotes eld
+\end_inset
+
+fage
+\begin_inset Quotes erd
+\end_inset
+
+ but in a report it would be labeled as 
+\begin_inset Quotes eld
+\end_inset
+
+Father's Age
+\begin_inset Quotes erd
+\end_inset
+
+ to make it easier to understand that variable. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Value Labels
+\series default
+ are labels for values, normally only used for nominal data. For example, it is common to store 
+\begin_inset Quotes eld
+\end_inset
+
+yes/no
+\begin_inset Quotes erd
+\end_inset
+
+ type of data where 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+yes.
+\begin_inset Quotes erd
+\end_inset
+
+ By specifing those values as Value Labels that would be displayed in reports rather something like 
+\begin_inset Formula $ 1 $
+\end_inset
+
+, which would be difficult to understand. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Missing Values
+\series default
+ are how missing values should be displayed. By default 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ displays missing values with a dot but some sort of code could be used instead and that code is entered here. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Column
+\series default
+ sets the width of the column displayed in the Data View. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Align
+\series default
+ determines if a column is left, center, or right aligned. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Measure
+\series default
+ determines how the variable is used by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and can be Scale, Ordinal, or Nominal. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\series bold
+Role
+\series default
+ is the role the variable plays in the dataset. The possible roles are Input, Output, Both, None, Partition, and Split. For all of the labs in this manual the role for all variables are always 
+\begin_inset Quotes eld
+\end_inset
+
+Input.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Any of the above attributes can be changed but the researcher is responsible to not 
+\begin_inset Quotes eld
+\end_inset
+
+break
+\begin_inset Quotes erd
+\end_inset
+
+ the dataset by changing an attribute to an inappropriate value.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Activity 2
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab01_act02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+cafe
+\shape default
+ dataset. Switch to the 
+\shape italic
+Variable View
+\shape default
+ and take a screen capture of all 
+\begin_inset Formula $ 13 $
+\end_inset
+
+ rows and the first seven columns (From 
+\shape italic
+Variable
+\shape default
+ to 
+\shape italic
+Value Labels
+\shape default
+) of the variable view. It should look something like Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_fig07"
+
+\end_inset
+
+, which shows the first six columns for the variable view of the 
+\shape italic
+births
+\shape default
+ dataset.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Menus
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The top of the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ screen has a menu bar with important selections. Most of the labs in this manual will focus on the 
+\shape italic
+Analyze
+\shape default
+ menu item. Students may also want to consider Appendix B, page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "app:b"
+
+\end_inset
+
+, and work through some of the 
+\shape italic
+Transform
+\shape default
+ menu items.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Syntax Files
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ is, technically, a command line program with scores of commands and options that are designed to be entered in a text box. The labs in this manual, though, teach students how to use a 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+GUI
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ rather than the command line. It may be easiest to think about the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+GUI
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ as a 
+\begin_inset Quotes eld
+\end_inset
+
+front end
+\begin_inset Quotes erd
+\end_inset
+
+ to the command line. Unfortunately, students who download and read the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ User's Guide can quickly become confused since it discusses commands like:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset listings
+lstparams "columns=fixed"
+inline true
+status collapsed
+
+\begin_layout Plain Layout
+REGRESSION /VARIABLES={age, tip} /STATISTICS={R, ANOVA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+with no clear relationship between a command like that and the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+GUI
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ that most students use. Technically, the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+GUI
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ is called 
+\begin_inset Quotes eld
+\end_inset
+
+PPSPIRE
+\begin_inset Quotes erd
+\end_inset
+
+ and is just an adjunct to 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It is possible to open a command line box and manually enter commands. To access a command line box, Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+File 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ New 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Syntax
+\end_layout
+
+\end_inset
+
+
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are many commands and options available via the command line that are not available using menus in the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+ac
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+GUI
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+, but those are not encountered in the labs in this manual (with only a couple of exceptions).
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Deliverable
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Complete the following activities in this lab:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Number
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Name
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Page
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab01_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab01_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab01_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab01_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab01_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Consolidate the responses for all activities into a single document and submit that document for grading.
+\end_layout
+
+\end_body
+\end_document

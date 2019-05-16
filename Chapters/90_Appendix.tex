@@ -1,0 +1,250 @@
+%********************************************************************
+% Appendix
+%*******************************************************
+% If problems with the headers: get headings in appendix etc. right
+%\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
+\chapter{Appendix}
+
+\section{Appendix A: Datasets}\label{app:a}
+
+There are a number of datasets used in the lab exercises and this appendix lists the elements in each dataset.
+
+\subsection{bdims}
+
+This is a dataset of the body girth measurements and skeletal diameter measurements, as well as age, weight, height and gender, for $ 507 $ physically active individuals, $ 247 $ men and $ 260 $ women.
+
+\begin{itemize}
+  \item \textbf{age}. (Scale) The patient's age in years.  
+  \item \textbf{ank.di}. (Scale) The patient's ankle diameter in centimeters, measured as sum of two ankles.
+  \item \textbf{ank.gi}. (Scale) The patient's ankle minimum girth in centimeters, measured as average of right and left girths.  
+  \item \textbf{bia.di}. (Scale) The patient's biacromial (shoulder width) in centimeters.
+  \item \textbf{bic.gi}. (Scale) The patient's bicep girth in centimeters, measured when flexed as the average of right and left girths.
+  \item \textbf{bii.di}. (Scale) The patient's biiliac (pelvic width) in centimeters.
+  \item \textbf{bit.di}. (Scale) The patient's bitrochanteric (femur width) in centimeters.
+  \item \textbf{cal.gi}. (Scale) The patient's calf maximum girth in centimeters, measured as average of right and left girths.  
+  \item \textbf{che.de}. (Scale) The patient's chest depth in centimeters, measured between spine and sternum at nipple level, mid-expiration.
+  \item \textbf{che.di}. (Scale) The patient's chest diameter in centimeters, measured at nipple level, mid-expiration.
+  \item \textbf{che.gi}. (Scale) The patient's chest girth in centimeters, measured at nipple line in males and just above breast tissue in females, mid-expiration.
+  \item \textbf{elb.di}. (Scale) The patient's elbow diameter in centimeters, measured as sum of two elbows.
+  \item \textbf{for.gi}. (Scale) The patient's forearm girth in centimeters, measured when extended, palm up as the average of right and left girths.
+  \item \textbf{hgt}. (Scale) The patient's height in centimeters.
+  \item \textbf{hip.gi}. (Scale) The patient's hip girth in centimeters, measured at at level of bitrochanteric (femur width) diameter.
+  \item \textbf{kne.di}. (Scale) The patient's knee diameter in centimeters, measured as sum of two knees.
+  \item \textbf{kne.gi}. (Scale) The patient's knee diameter in centimeters, measured as sum of two knees.
+  \item \textbf{nav.gi}. (Scale) The patient's navel (abdominal) girth in centimeters, measured at umbilicus and iliac crest using iliac crest as a landmark.
+  \item \textbf{sex}. (Nominal) The patient's sex coded as $ 0 $ for female and $ 1 $ for male.
+  \item \textbf{sho.gi}. (Scale) The patient's shoulder girth in centimeters, measured over deltoid muscles.
+  \item \textbf{thi.gi}. (Scale) The patient's thigh girth in centimeters, measured below gluteal fold as the average of right and left girths.
+  \item \textbf{wai.gi}. (Scale) The patient's waist girth in centimeters, measured at the narrowest part of torso below the rib cage as average of contracted and relaxed position.  
+  \item \textbf{wgt}. (Scale) The patient's weight in kilograms.
+  \item \textbf{wri.di}. (Scale) The patient's wrist diameter in centimeters, measured as sum of two wrists.
+  \item \textbf{wri.gi}. (Scale) The patient's wrist minimum girth in centimeters, measured as average of right and left girths.  
+\end{itemize}
+
+\subsection{births}
+
+This is a random sample of $ 1000 $ births in North Carolina in $ 2004 $.
+
+\begin{itemize}
+  \item \textbf{fage}. (scale) The father's age.
+  \item \textbf{gained}. (scale) The mother's weight gain, in pounds.
+  \item \textbf{gender}. (Nominal) The gender of the baby.
+  \item \textbf{habit}. (Nominal) Whether the mother was a smoker.
+  \item \textbf{lowbirthweight}. (Nominal) Whether the baby had a low birth weight.
+  \item \textbf{mage}. (Scale) The mother's age.
+  \item \textbf{marital}. (Nominal) Whether the mother was married.
+  \item \textbf{mature}. (Nominal) The mother's maturity level.
+  \item \textbf{premie}. (Nominal) Whether the baby was premature.
+  \item \textbf{visits}. (Scale) The number of hospital visits made by the mother.
+  \item \textbf{weeks}. (Scale) Length of pregnancy, in weeks.
+  \item \textbf{weight}. (Scale) Birth weight of the baby, in pounds.
+  \item \textbf{whitemom}. (Nominal) Whether the mother was white.
+\end{itemize}
+
+\subsection{cars}
+%TODO Start check here
+This is a random sample for $ 1993 $ model cars that were in both \textit{Consumer Reports} and \textit{PACE Buying Guide}. Only vehicles of type ``small,'' ``midsize,'' and ``large'' were included. The dataset has $ 54 $ rows and these data elements for each row:
+
+\begin{itemize}
+  \item \textbf{driveTrain}. (Nominal) Vehicle drive train with levels \textit{4WD}, \textit{front}, and \textit{rear}.
+  \item \textbf{mpgCity}. (Scale) City mileage (miles per gallon).
+  \item \textbf{passengers}. (Ordinal) The vehicle passenger capacity. 
+  \item \textbf{price}. (Scale) Vehicle price in U.S. dollars.
+  \item \textbf{type}. (Ordinal) The vehicle type with levels \textit{large}, \textit{midsize}, and \textit{small}.
+  \item \textbf{weight}. (Scale) Vehicle weight in pounds.
+\end{itemize}
+
+\subsection{email}
+
+This dataset contains $ 3921 $ observations from the email received by one person over the first three months of $ 2012 $.
+
+\begin{itemize}
+  \item \textbf{attach}. (Scale) The number of attached files. 
+  \item \textbf{cc}. (Scale) The number of people who were CCed on the message.
+  \item \textbf{date}. (Scale) The date and time the email was sent.
+  \item \textbf{dollar}. (Scale) The number of times a dollar sign or the word ``dollar'' appeared in the email.
+  \item \textbf{exclaim\_mess}. (Scale) The number of exclamation points in the email message.
+  \item \textbf{exclaim\_subj}. (Nominal) $ 0 $ if the email subject did not have an exclamation point, otherwise $ 1 $.
+  \item \textbf{format}. (Nominal) $ 0 $ if the message was sent in text format and $ 1 $ if it used HTML format.
+  \item \textbf{image}. (Scale) The number of images attached.
+  \item \textbf{inherit}. (Scale) The number of times ``inherit'' (or an extension, such as ``inheritance'') appeared in the email.
+  \item \textbf{line\_breaks}. (Scale) The number of line breaks in the email (does not count text wrapping). This could be used as a surrogate for the length of the message.
+  \item \textbf{num\_char}. (Scale) The number of characters in the email, in thousands. This could be used as a surrogate for the length of the message.
+  \item \textbf{number} (Ordinal) \textit{None} if the message included no numbers, \textit{small} if it included only numbers less than one million, or \textit{large} if it included one or more big numbers.
+  \item \textbf{password}. (Scale) The number of times ``password'' appeared in the email.
+  \item \textbf{re\_subj}. (Nominal) $ 1 $ if the subject started with any of these: ``Re:'', ``RE:'', ``re:'', or ``rE:'', otherwise $ 0 $.
+  \item \textbf{sent\_email}. (Nominal) $ 1 $ if email had been sent to the sender in the last $ 30 $ days, otherwise $ 0 $.
+  \item \textbf{spam}. (Nominal) $ 1 $ if the message is spam, otherwise $ 0 $.
+  \item \textbf{to\_multiple}. (Nominal) $ 1 $ for a message that was sent to more than one person, otherwise $ 0 $.
+  \item \textbf{urgent\_subj}. (Nominal) $ 1 $ if the subject included the word ``urgent,'' otherwise $ 0 $.
+  \item \textbf{viagra}. (Scale) The number of times ``viagra'' appeared in the email.
+  \item \textbf{winner}. (Nominal) $ 1 $ if the word ``winner'' appeared in the email, otherwise $ 0 $.
+\end{itemize}
+
+\subsection{gifted}
+
+An investigator is interested in understanding the relationship, if any, between the analytical skills of young gifted children and the variables listed below. The analytical skills are evaluated using a standard testing procedure and the score on that test is included in the dataset. Data were collected from schools in a large city on a set of $ 36 $ children who were identified as gifted children soon after they reached the age of four.
+
+\begin{itemize}
+  \item \textbf{Cartoons}. (Scale) Average number of hours per week the child watched cartoons on TV during the past three months.
+  \item \textbf{Count}. (Scale) Age in months when the child first counted to ten successfully.
+  \item \textbf{Edutv}. (Scale) Average number of hours per week the child watched an educational program on TV during the past three months.
+  \item \textbf{Fatheriq}. (Scale) Father's IQ.
+  \item \textbf{Motheriq}. (Scale) Mother's IQ.
+  \item \textbf{Read}. (Scale) Average number of hours per week the child's mother or father reads to the child.
+  \item \textbf{Score}. (Scale) The score earned on the test of analytical skills.
+  \item \textbf{Speak}. (Scale) Age in months when the child first said ``mommy'' or ``daddy.''
+\end{itemize}
+
+\subsection{cafe}
+
+\textit{This is simulated data.} Customers of the Main Street Caf\'{e} completed surveys over a one week period. 
+
+\begin{itemize}
+  \item \textbf{age}. (Scale) The age in years of the person completing the survey.
+  \item \textbf{bill}. (Scale) The bill for the meal.
+  \item \textbf{day}. (Nominal) The day of the week the person visited the cafe. The levels are $ 1 $ for ``Sunday'', $ 2 $ for ``Monday,'' etc.
+  \item \textbf{food}. (Ordinal) A rating for the food, from one to five ``stars.''
+  \item \textbf{length}. (Scale) The length of the visit in minutes.
+  \item \textbf{meal}. (Nominal) The meal eaten stored as $ 0 $ for Breakfast, $ 1 $ for Lunch, $ 2 $ for Dinner, and $ 3 $ for Other.
+  \item \textbf{miles}. (Scale) The number of miles between the visitor's home and the caf\'{e}.
+  \item \textbf{pref}. (Nominal) A binary item for seating preference where $ 0 $ is for ``booth'' and $ 1 $ is for ``table.''
+  \item \textbf{ptysize}. (Scale) The size of the dining party.
+  \item \textbf{recmd}. (Nominal) A binary item for whether the customer would recommend the caf\'{e} to other people, stored as $ 0 $ for ``no'' and $ 1 $ for ``yes.''   
+  \item \textbf{sex}. (Nominal) The Sex of the person completing the survey. The levels are: $ 0 $ for male, $ 1 $ for female, and $ 2 $ for other. 
+  \item \textbf{svc}.  (Ordinal) A rating for the service, from one to five ``stars.''
+  \item \textbf{tip}. (Scale) The amount of tip left.
+\end{itemize}
+
+\subsection{rivers}
+
+The Rivers dataset is a list of the lengths, in miles, of the longest $ 141 $ rivers in the United States.
+
+\begin{quote}
+  $ 135 $, $ 202 $, $ 210 $, $ 210 $, $ 215 $, $ 217 $, $ 230 $, $ 230 $, $ 233 $, $ 237 $, $ 246 $, $ 250 $, $ 250 $, $ 250 $, $ 255 $, $ 259 $, $ 260 $, $ 260 $, $ 265 $, $ 268 $, $ 270 $, $ 276 $, $ 280 $, $ 280 $, $ 280 $, $ 281 $, $ 286 $, $ 290 $, $ 291 $, $ 300 $, $ 300 $, $ 300 $, $ 301 $, $ 306 $, $ 310 $, $ 310 $, $ 314 $, $ 315 $, $ 320 $, $ 325 $, $ 327 $, $ 329 $, $ 330 $, $ 332 $, $ 336 $, $ 338 $, $ 340 $, $ 350 $, $ 350 $, $ 350 $, $ 350 $, $ 352 $, $ 360 $, $ 360 $, $ 360 $, $ 360 $, $ 375 $, $ 377 $, $ 380 $, $ 380 $, $ 383 $, $ 390 $, $ 390 $, $ 392 $, $ 407 $, $ 410 $, $ 411 $, $ 420 $, $ 420 $, $ 424 $, $ 425 $, $ 430 $, $ 431 $, $ 435 $, $ 444 $, $ 445 $, $ 450 $, $ 460 $, $ 460 $, $ 465 $, $ 470 $, $ 490 $, $ 500 $, $ 500 $, $ 505 $, $ 524 $, $ 525 $, $ 525 $, $ 529 $, $ 538 $, $ 540 $, $ 545 $, $ 560 $, $ 570 $, $ 600 $, $ 600 $, $ 600 $, $ 605 $, $ 610 $, $ 618 $, $ 620 $, $ 625 $, $ 630 $, $ 652 $, $ 671 $, $ 680 $, $ 696 $, $ 710 $, $ 720 $, $ 720 $, $ 730 $, $ 735 $, $ 735 $, $ 760 $, $ 780 $, $ 800 $, $ 840 $, $ 850 $, $ 870 $, $ 890 $, $ 900 $, $ 900 $, $ 906 $, $ 981 $, $ 1000 $, $ 1038 $, $ 1054 $, $ 1100 $, $ 1171 $, $ 1205 $, $ 1243 $, $ 1270 $, $ 1306 $, $ 1450 $, $ 1459 $, $ 1770 $, $ 1885 $, $ 2315 $, $ 2348 $, $ 2533 $
+\end{quote}
+
+\section{Appendix B: Recoding Variables} \label{app:b}
+
+\subsection{Background}
+
+For efficiency, data are often stored in a database in a format that does not lend itself to easy analysis. For example, nominative values, like ``no'' and ``yes'' are frequently stored as $ 0 $ and $ 1 $. While that is efficient for storage it makes using a table or chart more difficult because the various data elements will be presented as something like $ 0 $ instead of ``no'' and it is incumbent upon the researcher to remember what the various codes mean; however, values in a dataset can be recoded to make them easier to use. As examples, ``$ 0 / 1 $'' values can be recoded to ``no/yes'' or a variable containing ages can be recoded so the ages are grouped, like ages $ 20 - 29 $ can be recoded to $ 2 $. 
+
+\subsection{Recoding Variables With \texttt{SOFA}}
+
+In \texttt{SOFA}, a data field is recoded into a new field so the dataset ends up with two fields that contain the same data but in different formats. As an example, imagine that a researcher is using the ``spam'' field of the \textit{email} dataset and desires to use $ 0 $ instead of ``no'' and $ 1 $ instead of ``yes,'' then that field would need to be recoded.
+
+\begin{enumerate}
+  \item {Start \texttt{SOFA} and select ``Enter/Edit Data.''}
+  \item Data Tables: email
+  \item Click ``Design''
+  \item Click the ``Recode'' button on the Data Table screen
+  \item Fill in the ``Recode'' screen as illustrated below. (Note: since each row is saved as it is entered, the cursor must be moved into Row $ 3 $, as illustrated, in order to save the changes made on Row $ 2 $).
+  
+  \begin{figure}[H]
+    \begin{center}
+%      \fbox{\includegraphics[width=\linewidth]{gfx/apb005}}
+      \caption{Recoding Spam Field}
+    \end{center}
+  \end{figure}
+  
+  \item Click ``Recode''
+  \item The following message will be displayed
+  
+  \begin{figure}[H]
+    \begin{center}
+%      \fbox{\includegraphics[]{gfx/apb010}}
+      \caption{Recode Warning on Save}
+    \end{center}
+  \end{figure}
+  
+  \item Click OK to dismiss the warning, click OK to complete the recode, and then click ``Update'' to file the results of the recode process.
+
+\end{enumerate}
+
+When this process is completed the \textit{email} dataset will contain a new field named ``spamnum'' that contains a $ 0 $ where ``spam'' is equal to ``no'' and a $ 1 $ where ``spam'' is ``yes.''
+
+\section{Appendix C: SOFA Exports} \label{app:c}
+
+\texttt{SOFA} creates several different types of exports and each are easy to generate and use. Export specifications are set in the area across the center of the various pop-up windows (Report Tables, Charts, and Statistics) and generating reports is the same for all of the windows.
+
+\subsection{Styles}
+
+\texttt{SOFA} comes with seven built-in styles that can be selected from the box on the bottom-right of the window:
+
+\begin{figure}[H]
+  \begin{center}
+%    \fbox{\includegraphics[]{gfx/apc005}}
+    \caption{SOFA Styles}
+  \end{center}
+\end{figure}
+
+As each style is selected the display in the lower-left corner of the window is immediately updated to reflect the selected style.
+
+\subsection{Exporting a File}
+
+The output in the lower-left corner of the window can be exported in a file that can be opened by a program like Excel. In the Export drop-down box at the right-center of the window select ``Current Output'' and then click the ``Export'' button.
+
+\begin{figure}[H]
+  \begin{center}
+%    \fbox{\includegraphics[]{gfx/apc010}}
+    \caption{Selecting Export Type}
+  \end{center}
+\end{figure}
+
+Select the specific type of output desired in the pop-up window.
+
+\begin{figure}[H]
+  \begin{center}
+%    \fbox{\includegraphics[]{gfx/apc015}}
+    \caption{Specifying Desired Export}
+  \end{center}
+\end{figure}
+
+\begin{itemize}
+  \item Export as PDF. This option will generate a PDF file containing the current output. Note that a number of different outputs can be combined into a single PDF file by using the ``Report'' feature, described below.
+  \item Export to spreadsheet (report tables only). This generates an Excel spreadsheet without any formatting. This is an excellent option if the data produced by \texttt{SOFA} needs further manipulation.
+  \item Export as Images. \texttt{SOFA} will export the output as .PNG images that can be used in other programs or emailed. The quality of the image can be selected using the drop-down box. (NOTE: for most work the ``Print Quality (300 dpi)'' setting is adequate.)
+\end{itemize}
+
+Click the ``Export'' button to generate the desired export file.
+
+
+\subsection{Copy/Paste Output}
+
+In the dropdown ``Export'' box, select ``Copy current output ready to paste'' to copy the output displayed in the lower left corner of the window so it can be pasted directly into Word or some other program.
+
+\subsection{Reports}
+
+\texttt{SOFA} can combine the outputs for several operations into a single PDF report or series of .PNG files. This is a two-step process, first the various outputs are saved into a report and, second, the final report is exported.
+
+To save the outputs into a single report, start by specifying the location and name for the report. By default, \texttt{SOFA} saves reports in the \textit{sofastats/reports} folder and that is appropriate since \texttt{SOFA} can generate a number of files when producing a report. To specify the name for a new report, click the ``Browse'' button and enter the report's name (it is the file name). \texttt{SOFA} saves reports in .HTM format but a different format can be specified when the report is later exported.
+
+Then, as outputs are produced, click the ``Also add to report'' button to add the current output, displayed in the lower-left corner of the window, to the report. Note: every time the ``Also add to report'' button is clicked the current output is added to the report so avoid clicking that button multiple times unless multiple copies of the current output are desired.
+
+To export the report, select ``Entire Report'' in the export drop-down box. Select the format for the report (PDF, images, or Excel Spreadsheet) and click ``Export.'' 
+
+Note: SOFA exports PDF files such that each saved output screen is on a different PDF page, which makes the PDF file rather long with a lot of blank space between pages. As an alternative, it may be possible to click the ``View Report'' button to open the report in a browser and then use the browser's print feature.
+
+
+

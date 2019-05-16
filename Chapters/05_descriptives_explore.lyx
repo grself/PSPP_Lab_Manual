@@ -1,0 +1,2177 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass scrreprt
+\options openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,abstractoff,BCOR=5mm,fontsize=11pt
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang american
+Lab 05: Explore
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:lab05"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*****************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setcounter{figure}{10}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+NoCaseChange{Homo Sapiens}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+listoftodos % Creates the ToDo listing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Preparing and 
+\begin_inset Quotes eld
+\end_inset
+
+cleaning
+\begin_inset Quotes erd
+\end_inset
+
+ data before it is used in statistical analysis is an important and time-consuming process. It should make sense that to find a mean of a data element is rather pointless if that element contains bad data. While the process of cleaning data is beyond the scope of this manual there are a few simple steps researchers can take to attempt to verify the integrity of the data. This lab examines the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\shape italic
+Explore
+\shape default
+ feature that permits that sort of examination.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Discussion
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Data Problems
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are a number of simple tests that researchers can perform on a data element before they start working with it to determine if there are problems that may foul further statistical analysis. While some data analysis programs include tools to help clean and prepare data for analysis it is probably better to use software that has been specifically created for that purpose so the data can be ready before it is ever imported into a program like 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+. For students who want to explore this aspect of data analysis, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Open Refine"
+target "http://openrefine.org/"
+
+\end_inset
+
+is an excellent place to start. This was formerly 
+\shape italic
+Google Refine
+\shape default
+ and is an easy-to-use, but powerful, data preparation tool with a many free online tutorials and other help.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Data Element Type
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+When data are first imported into the data base it is possible for the automatic process to misidentify the type of data being imported. For example, a numeric data element may be imported as text and that would limit the types of analysis that could be completed. This type of error is normally very easy to detect and correct by simply changing the data element's attribute settings.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Duplicate Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Often records in a dataset are duplicated and this would create a problem when analyzing the data. Some data analysis software includes built-in procedures to detect and correct duplicate data, but this type of error can more efficiently be corrected with data preparation software made to correct these errors.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Missing Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Often, survey data will have missing values because the respondents did not complete one or more questions for some reason. This creates missing data and researchers need to account for those missing items. There are several techniques used to allow for missing data.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Ignore records. It is possible to simply exclude an entire record from analysis if there are any missing elements within that record. This should only be done if the number of records being excluded is less then 5% of the total number of records. Excluding records also does not work well for data from matched trials (
+\begin_inset Quotes eld
+\end_inset
+
+before/after
+\begin_inset Quotes erd
+\end_inset
+
+ types of experiments) or time values (where something is being measured over a long period of time). 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Setting missing values to a fixed value. It is possible to simply find-replace all missing values with some fixed number, like 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. This, though, leads to a number of additional problems and should not be used. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Estimating values. It is common to replace missing values with an estimate for the missing data. For example, missing values could be replaced by the mean of the entire dataset or by the mean that is calculated from nearby values. 
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Outliers
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It is common for interval and ratio data to include outliers, or values that are far outside the range of 
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+ values. For example, a survey of home prices in a neighborhood may reveal that the mean value of a home is $150K but there is one mobile home in the neighborhood that is valued at only $75K. That low value would be an outlier that would concern researchers.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are several methods used to deal with outliers. If there is an obvious coding error, like a decimal point in the wrong place, then it can simply be corrected. Outliers can also be systematically changed to a value that is three standard deviations from the mean. They can also be excluded from analysis by using a method like trimmed means. Finally, if the outliers seem to contain data that is important for further analysis, then the dataset can be split such that the outliers end up in their own subset where they can receive more scrutiny.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang american
+Data Distribution
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Most statistical tests require data to be normally distributed and if the dataset has some other distribution, or is badly skewed or shows an abnormal kurtosis
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+
+\lang american
+Lab 1 contains information on data distributions, skew, and kurtosis.
+\end_layout
+
+\end_inset
+
+, then the statistical analysis may fail. To try to correct the distribution it is possible to apply some sort of transformation to the data to see if a better fit can be achieved. As one example, the common logarithm can be taken of the data and that may fit a normal distribution curve better than the raw data.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Procedure
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%TODO Nice definition: Confidence intervals are ranges where the true mean is expected to lie. 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Data Element Type
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The simplest way to check and correct an improperly imported data error is to examine the attributes for the data elemets to see if they seem to be correct. Within 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+, click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Variable View
+\end_layout
+
+\end_inset
+
+
+\shape default
+ at the bottom of the data window and look carefully at each variable's attributes.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/Lab05_fig01.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Attributes for the Email Dataset Elements
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_fig01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_fig01"
+
+\end_inset
+
+, the type of data is found in column three and that can be changed if necessary. The data width is found in columns four and five where string data (that is, text data) is restricted to only the number of characters in column four. For numeric data the integer part is restricted to the width specified in column four and the decimal to that specified in column five. The other column of interest is 
+\begin_inset Formula $ 11 $
+\end_inset
+
+, labeled 
+\begin_inset Quotes eld
+\end_inset
+
+Measure.
+\begin_inset Quotes erd
+\end_inset
+
+ That indicates how the data are being used by 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and that can be easily changed between Nominal, Ordinal, and Scale (that is both ratio and interval).
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Duplicate Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ does not include a method to detect duplicate data; therefore, a pre-processing program, like 
+\begin_inset CommandInset href
+LatexCommand href
+name "Open Refine"
+target "http://openrefine.org/"
+
+\end_inset
+
+should be used to prepare the dataset, include removing duplicate records, before it is imported.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Missing Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Start 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ and open the 
+\shape italic
+births
+\shape default
+ dataset, then:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Analyze 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Descriptive Statistics 
+\begin_inset Formula $ \rightarrow $
+\end_inset
+
+ Explore
+\end_layout
+
+\end_inset
+
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click the word 
+\shape italic
+visits
+\shape default
+ in the left column and then click the right-arrow button near the center of the window to move 
+\shape italic
+visits
+\shape default
+ to the 
+\begin_inset Quotes eld
+\end_inset
+
+Dependent List
+\begin_inset Quotes erd
+\end_inset
+
+ box on the right side of the window. (Alternatively, double-click the word 
+\shape italic
+visits
+\shape default
+ in the left column to move it to the 
+\begin_inset Quotes eld
+\end_inset
+
+Dependent List
+\begin_inset Quotes erd
+\end_inset
+
+ box.) 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\shape smallcaps
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\shape smallcaps
+
+\lang american
+Statistics
+\end_layout
+
+\end_inset
+
+
+\shape default
+ at the bottom of the screen. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Select all three statistics functions: Descriptives, Extremes, and Percentiles. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+Continue
+\end_layout
+
+\end_inset
+
+ to close the Statistics window. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+OK
+\end_layout
+
+\end_inset
+
+ to generate the requested information. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab05_fig03.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Generating Explore Information
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_fig03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Box Boxed
+position "c"
+hor_pos "l"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab05_fig04.png
+	width 100line%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Explore Information
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_fig04"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The 
+\begin_inset Quotes eld
+\end_inset
+
+Case Processing Summary
+\begin_inset Quotes erd
+\end_inset
+
+ box at the top of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_fig04"
+
+\end_inset
+
+ indicates that the 
+\shape italic
+age
+\shape default
+ element is missing nine cases, which is only about 
+\begin_inset Formula $ 0.9\% $
+\end_inset
+
+ of the total number of cases in the dataset. Becuase this is well under 
+\begin_inset Formula $ 5\% $
+\end_inset
+
+ of the total number of cases, it would be reasonable to simply ignore the missing cases if the 
+\shape italic
+visits
+\shape default
+ data were being analyzed.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Activity 1: Missing Data
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_act01"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+births
+\shape default
+ dataset, determine the number and percent of missing cases for 
+\shape italic
+Father's Age
+\shape default
+ and 
+\shape italic
+Weight Gained
+\shape default
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Outliers
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There is no rigid statistical definition of 
+\begin_inset Quotes eld
+\end_inset
+
+outlier
+\begin_inset Quotes erd
+\end_inset
+
+ so there is no one way to detect them. However, there are several simple techniques can be used to determine if a data element has suspected outliers.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Quotes eld
+\end_inset
+
+Tukey's Test
+\begin_inset Quotes erd
+\end_inset
+
+ is to take the Interquartile Range (IQR) and multiply that by 
+\begin_inset Formula $ 1.5 $
+\end_inset
+
+ then subtract that number from the first quartile and add it to the third quartile. Any values that lie outside those boundaries should be investigated as potential outliers. As an example, consider Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_fig04"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The IQR of 
+\begin_inset Formula $ 5.00 $
+\end_inset
+
+ is found in the 
+\begin_inset Quotes eld
+\end_inset
+
+Descriptives
+\begin_inset Quotes erd
+\end_inset
+
+ table. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Multiply the IQR by 
+\begin_inset Formula $ 1.5 $
+\end_inset
+
+ to get 
+\begin_inset Formula $ 7.5 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The values of the first (
+\begin_inset Formula $ 25\% $
+\end_inset
+
+) and third (
+\begin_inset Formula $ 75\% $
+\end_inset
+
+) quadrants are found in the 
+\begin_inset Quotes eld
+\end_inset
+
+Percentiles
+\begin_inset Quotes erd
+\end_inset
+
+ box. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Subtract 
+\begin_inset Formula $ 10.00 - 7.5 $
+\end_inset
+
+ to get the lower bound of 
+\begin_inset Formula $ 2.5 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Add 
+\begin_inset Formula $ 15.00 + 7.5 $
+\end_inset
+
+ to get the upper bound of 
+\begin_inset Formula $ 22.5 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Use the 
+\begin_inset Quotes eld
+\end_inset
+
+Extreme Values
+\begin_inset Quotes erd
+\end_inset
+
+ box to see if any values lie below the lower bound or above the upper bound and there are many. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Another approach is to look for values that are more than three standard deviations from the mean of the dataset. Again, using Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_fig04"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The mean of 
+\begin_inset Formula $ 12.10 $
+\end_inset
+
+ is found in the 
+\begin_inset Quotes eld
+\end_inset
+
+Descriptives
+\begin_inset Quotes erd
+\end_inset
+
+ table. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The standard deviation of 
+\begin_inset Formula $ 3.95 $
+\end_inset
+
+ is found in the 
+\begin_inset Quotes eld
+\end_inset
+
+Descriptives
+\begin_inset Quotes erd
+\end_inset
+
+ table. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Multiply the standard deviation by 
+\begin_inset Formula $ 3 $
+\end_inset
+
+ to get 
+\begin_inset Formula $ 11.85 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Subtract 
+\begin_inset Formula $ 12.10-11.85 $
+\end_inset
+
+ to get the lower bound of 
+\begin_inset Formula $ 0.25 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Add 
+\begin_inset Formula $ 12.10+11.85 $
+\end_inset
+
+ to get the upper bound of 
+\begin_inset Formula $ 23.95 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Use the 
+\begin_inset Quotes eld
+\end_inset
+
+Extreme Values
+\begin_inset Quotes erd
+\end_inset
+
+ box to see if any values lie below the lower bound or above the upper bound and there are many. 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+It is perhaps easiest to use the Z-Score to look for outliers. Since the Z-Score is the number of standard deviations a data point lies from the mean, researchers can look for any Z-Scores above 
+\begin_inset Formula $ +3.0 $
+\end_inset
+
+ or below 
+\begin_inset Formula $ -3.0 $
+\end_inset
+
+ to detect outliers. The method for calculating Z-Scores with 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+acs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+PSPP
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ was described on page 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "z-scores"
+
+\end_inset
+
+. The Z-Scores for 
+\shape italic
+Visits
+\shape default
+ in the 
+\shape italic
+Births
+\shape default
+ dataset was calculated and Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_fig05"
+
+\end_inset
+
+ shows the top 
+\begin_inset Formula $ 19 $
+\end_inset
+
+ and bottom 
+\begin_inset Formula $ 11 $
+\end_inset
+
+ cases for that data element.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 1
+use_makebox 0
+width "45line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+ 
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab05_fig05.png
+	width 100line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \qquad{}
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "45line%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+
+\begin_layout Plain Layout
+
+\begin_inset Graphics 
+	filename 2017 Fall/gfx/lab05_fig06.png
+	width 100line%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Z-Scores for Visits
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_fig05"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Notice that the top nine cases have missing data, indicated by a dot, but cases 
+\begin_inset Formula $ 10-16 $
+\end_inset
+
+ have a Z-Score of 
+\begin_inset Formula $ -3.06 $
+\end_inset
+
+, which are more than three standard deviations below the mean and would be likely outliers. In the same way, cases 
+\begin_inset Formula $ 993-1000 $
+\end_inset
+
+ are all more than three standard deviations above the mean and would be likely outliers.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Activity 2: Outliers
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_act02"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+births
+\shape default
+ dataset, determine the outliers for the 
+\shape italic
+weight
+\shape default
+ data element. For this activity, assume that any weight that is more than three standard deviations below or above the mean is an outlier. Report the weight, the Z-Score, and number of times that weight appears in the dataset. The response should be similar to this:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+Weight 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+Z-Score 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+Number 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+1.20 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+-3.55 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+3 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+1.18 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+-3.54 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+1 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+11.75 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
++3.10 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+2 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Activity 3: Outliers
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "lab05_act03"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Using the 
+\shape italic
+cafe
+\shape default
+ dataset, determine the outliers for the 
+\shape italic
+miles
+\shape default
+ data element. For this activity, assume that any values more than three standard deviations below or above the mean is an outlier. Report the miles, the Z-Score, and number of times that value appears in the dataset. The response should be similar to the table in Activity 2.
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Deliverable
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Complete the following activities in this lab:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+rowcolors
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+gray!25
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Tabular 
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle" tabularwidth="0pt">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Number
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Name
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\series bold
+Page
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab05_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab05_act01"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab05_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab05_act02"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lab05_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand nameref
+reference "lab05_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "lab05_act03"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Consolidate the responses for all activities into a single document and submit that document for grading.
+\end_layout
+
+\end_body
+\end_document

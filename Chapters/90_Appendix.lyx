@@ -1,0 +1,3011 @@
+#LyX file created by tex2lyx 2.2
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin C:/Users/George/Google Drive/Classes - Active/BASV 316 - Research/Labs - PSPP/Lab Manual/2017 Fall/Chapters/
+\textclass scrreprt
+\options openright,titlepage,numbers=noenddot,headinclude,footinclude=true,cleardoublepage=empty,abstractoff,BCOR=5mm,fontsize=11pt
+\use_default_options false
+\maintain_unincluded_children false
+\language american
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%********************************************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Appendix
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%*******************************************************
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% If problems with the headers: get headings in appendix etc. right
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+markboth{
+\backslash
+spacedlowsmallcaps{Appendix}}{
+\backslash
+spacedlowsmallcaps{Appendix}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang american
+Appendix
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Appendix A: Datasets
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "app:a"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+There are a number of datasets used in the lab exercises and this appendix lists the elements in each dataset.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+bdims
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+This is a dataset of the body girth measurements and skeletal diameter measurements, as well as age, weight, height and gender, for 
+\begin_inset Formula $ 507 $
+\end_inset
+
+ physically active individuals, 
+\begin_inset Formula $ 247 $
+\end_inset
+
+ men and 
+\begin_inset Formula $ 260 $
+\end_inset
+
+ women.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+age
+\series default
+. (Scale) The patient's age in years. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+ank.di
+\series default
+. (Scale) The patient's ankle diameter in centimeters, measured as sum of two ankles. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+ank.gi
+\series default
+. (Scale) The patient's ankle minimum girth in centimeters, measured as average of right and left girths. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+bia.di
+\series default
+. (Scale) The patient's biacromial (shoulder width) in centimeters. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+bic.gi
+\series default
+. (Scale) The patient's bicep girth in centimeters, measured when flexed as the average of right and left girths. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+bii.di
+\series default
+. (Scale) The patient's biiliac (pelvic width) in centimeters. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+bit.di
+\series default
+. (Scale) The patient's bitrochanteric (femur width) in centimeters. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+cal.gi
+\series default
+. (Scale) The patient's calf maximum girth in centimeters, measured as average of right and left girths. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+che.de
+\series default
+. (Scale) The patient's chest depth in centimeters, measured between spine and sternum at nipple level, mid-expiration. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+che.di
+\series default
+. (Scale) The patient's chest diameter in centimeters, measured at nipple level, mid-expiration. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+che.gi
+\series default
+. (Scale) The patient's chest girth in centimeters, measured at nipple line in males and just above breast tissue in females, mid-expiration. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+elb.di
+\series default
+. (Scale) The patient's elbow diameter in centimeters, measured as sum of two elbows. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+for.gi
+\series default
+. (Scale) The patient's forearm girth in centimeters, measured when extended, palm up as the average of right and left girths. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+hgt
+\series default
+. (Scale) The patient's height in centimeters. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+hip.gi
+\series default
+. (Scale) The patient's hip girth in centimeters, measured at at level of bitrochanteric (femur width) diameter. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+kne.di
+\series default
+. (Scale) The patient's knee diameter in centimeters, measured as sum of two knees. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+kne.gi
+\series default
+. (Scale) The patient's knee diameter in centimeters, measured as sum of two knees. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+nav.gi
+\series default
+. (Scale) The patient's navel (abdominal) girth in centimeters, measured at umbilicus and iliac crest using iliac crest as a landmark. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+sex
+\series default
+. (Nominal) The patient's sex coded as 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ for female and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for male. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+sho.gi
+\series default
+. (Scale) The patient's shoulder girth in centimeters, measured over deltoid muscles. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+thi.gi
+\series default
+. (Scale) The patient's thigh girth in centimeters, measured below gluteal fold as the average of right and left girths. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+wai.gi
+\series default
+. (Scale) The patient's waist girth in centimeters, measured at the narrowest part of torso below the rib cage as average of contracted and relaxed position. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+wgt
+\series default
+. (Scale) The patient's weight in kilograms. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+wri.di
+\series default
+. (Scale) The patient's wrist diameter in centimeters, measured as sum of two wrists. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+wri.gi
+\series default
+. (Scale) The patient's wrist minimum girth in centimeters, measured as average of right and left girths. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+births
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+This is a random sample of 
+\begin_inset Formula $ 1000 $
+\end_inset
+
+ births in North Carolina in 
+\begin_inset Formula $ 2004 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+fage
+\series default
+. (scale) The father's age. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+gained
+\series default
+. (scale) The mother's weight gain, in pounds. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+gender
+\series default
+. (Nominal) The gender of the baby. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+habit
+\series default
+. (Nominal) Whether the mother was a smoker. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+lowbirthweight
+\series default
+. (Nominal) Whether the baby had a low birth weight. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+mage
+\series default
+. (Scale) The mother's age. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+marital
+\series default
+. (Nominal) Whether the mother was married. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+mature
+\series default
+. (Nominal) The mother's maturity level. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+premie
+\series default
+. (Nominal) Whether the baby was premature. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+visits
+\series default
+. (Scale) The number of hospital visits made by the mother. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+weeks
+\series default
+. (Scale) Length of pregnancy, in weeks. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+weight
+\series default
+. (Scale) Birth weight of the baby, in pounds. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+whitemom
+\series default
+. (Nominal) Whether the mother was white. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+cars
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%TODO Start check here
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+This is a random sample for 
+\begin_inset Formula $ 1993 $
+\end_inset
+
+ model cars that were in both 
+\shape italic
+Consumer Reports
+\shape default
+ and 
+\shape italic
+PACE Buying Guide
+\shape default
+. Only vehicles of type 
+\begin_inset Quotes eld
+\end_inset
+
+small,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+midsize,
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+large
+\begin_inset Quotes erd
+\end_inset
+
+ were included. The dataset has 
+\begin_inset Formula $ 54 $
+\end_inset
+
+ rows and these data elements for each row:
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+driveTrain
+\series default
+. (Nominal) Vehicle drive train with levels 
+\shape italic
+4WD
+\shape default
+, 
+\shape italic
+front
+\shape default
+, and 
+\shape italic
+rear
+\shape default
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+mpgCity
+\series default
+. (Scale) City mileage (miles per gallon). 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+passengers
+\series default
+. (Ordinal) The vehicle passenger capacity. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+price
+\series default
+. (Scale) Vehicle price in U.S. dollars. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+type
+\series default
+. (Ordinal) The vehicle type with levels 
+\shape italic
+large
+\shape default
+, 
+\shape italic
+midsize
+\shape default
+, and 
+\shape italic
+small
+\shape default
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+weight
+\series default
+. (Scale) Vehicle weight in pounds. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+email
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+This dataset contains 
+\begin_inset Formula $ 3921 $
+\end_inset
+
+ observations from the email received by one person over the first three months of 
+\begin_inset Formula $ 2012 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+attach
+\series default
+. (Scale) The number of attached files. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+cc
+\series default
+. (Scale) The number of people who were CCed on the message. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+date
+\series default
+. (Scale) The date and time the email was sent. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+dollar
+\series default
+. (Scale) The number of times a dollar sign or the word 
+\begin_inset Quotes eld
+\end_inset
+
+dollar
+\begin_inset Quotes erd
+\end_inset
+
+ appeared in the email. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+exclaim_mess
+\series default
+. (Scale) The number of exclamation points in the email message. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+exclaim_subj
+\series default
+. (Nominal) 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ if the email subject did not have an exclamation point, otherwise 
+\begin_inset Formula $ 1 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+format
+\series default
+. (Nominal) 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ if the message was sent in text format and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if it used HTML format. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+image
+\series default
+. (Scale) The number of images attached. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+inherit
+\series default
+. (Scale) The number of times 
+\begin_inset Quotes eld
+\end_inset
+
+inherit
+\begin_inset Quotes erd
+\end_inset
+
+ (or an extension, such as 
+\begin_inset Quotes eld
+\end_inset
+
+inheritance
+\begin_inset Quotes erd
+\end_inset
+
+) appeared in the email. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+line_breaks
+\series default
+. (Scale) The number of line breaks in the email (does not count text wrapping). This could be used as a surrogate for the length of the message. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+num_char
+\series default
+. (Scale) The number of characters in the email, in thousands. This could be used as a surrogate for the length of the message. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+number
+\series default
+ (Ordinal) 
+\shape italic
+None
+\shape default
+ if the message included no numbers, 
+\shape italic
+small
+\shape default
+ if it included only numbers less than one million, or 
+\shape italic
+large
+\shape default
+ if it included one or more big numbers. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+password
+\series default
+. (Scale) The number of times 
+\begin_inset Quotes eld
+\end_inset
+
+password
+\begin_inset Quotes erd
+\end_inset
+
+ appeared in the email. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+re_subj
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if the subject started with any of these: 
+\begin_inset Quotes eld
+\end_inset
+
+Re:
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+RE:
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+re:
+\begin_inset Quotes erd
+\end_inset
+
+, or 
+\begin_inset Quotes eld
+\end_inset
+
+rE:
+\begin_inset Quotes erd
+\end_inset
+
+, otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+sent_email
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if email had been sent to the sender in the last 
+\begin_inset Formula $ 30 $
+\end_inset
+
+ days, otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+spam
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if the message is spam, otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+to_multiple
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for a message that was sent to more than one person, otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+urgent_subj
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if the subject included the word 
+\begin_inset Quotes eld
+\end_inset
+
+urgent,
+\begin_inset Quotes erd
+\end_inset
+
+ otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+viagra
+\series default
+. (Scale) The number of times 
+\begin_inset Quotes eld
+\end_inset
+
+viagra
+\begin_inset Quotes erd
+\end_inset
+
+ appeared in the email. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+winner
+\series default
+. (Nominal) 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ if the word 
+\begin_inset Quotes eld
+\end_inset
+
+winner
+\begin_inset Quotes erd
+\end_inset
+
+ appeared in the email, otherwise 
+\begin_inset Formula $ 0 $
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+gifted
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+An investigator is interested in understanding the relationship, if any, between the analytical skills of young gifted children and the variables listed below. The analytical skills are evaluated using a standard testing procedure and the score on that test is included in the dataset. Data were collected from schools in a large city on a set of 
+\begin_inset Formula $ 36 $
+\end_inset
+
+ children who were identified as gifted children soon after they reached the age of four.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Cartoons
+\series default
+. (Scale) Average number of hours per week the child watched cartoons on TV during the past three months. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Count
+\series default
+. (Scale) Age in months when the child first counted to ten successfully. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Edutv
+\series default
+. (Scale) Average number of hours per week the child watched an educational program on TV during the past three months. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Fatheriq
+\series default
+. (Scale) Father's IQ. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Motheriq
+\series default
+. (Scale) Mother's IQ. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Read
+\series default
+. (Scale) Average number of hours per week the child's mother or father reads to the child. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Score
+\series default
+. (Scale) The score earned on the test of analytical skills. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+Speak
+\series default
+. (Scale) Age in months when the child first said 
+\begin_inset Quotes eld
+\end_inset
+
+mommy
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+daddy.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+cafe
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\shape italic
+This is simulated data.
+\shape default
+ Customers of the Main Street Café completed surveys over a one week period.
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+age
+\series default
+. (Scale) The age in years of the person completing the survey. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+bill
+\series default
+. (Scale) The bill for the meal. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+day
+\series default
+. (Nominal) The day of the week the person visited the cafe. The levels are 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+Sunday
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Formula $ 2 $
+\end_inset
+
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+Monday,
+\begin_inset Quotes erd
+\end_inset
+
+ etc. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+food
+\series default
+. (Ordinal) A rating for the food, from one to five 
+\begin_inset Quotes eld
+\end_inset
+
+stars.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+length
+\series default
+. (Scale) The length of the visit in minutes. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+meal
+\series default
+. (Nominal) The meal eaten stored as 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ for Breakfast, 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for Lunch, 
+\begin_inset Formula $ 2 $
+\end_inset
+
+ for Dinner, and 
+\begin_inset Formula $ 3 $
+\end_inset
+
+ for Other. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+miles
+\series default
+. (Scale) The number of miles between the visitor's home and the café. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+pref
+\series default
+. (Nominal) A binary item for seating preference where 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ is for 
+\begin_inset Quotes eld
+\end_inset
+
+booth
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ is for 
+\begin_inset Quotes eld
+\end_inset
+
+table.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+ptysize
+\series default
+. (Scale) The size of the dining party. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+recmd
+\series default
+. (Nominal) A binary item for whether the customer would recommend the café to other people, stored as 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+yes.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+sex
+\series default
+. (Nominal) The Sex of the person completing the survey. The levels are: 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ for male, 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ for female, and 
+\begin_inset Formula $ 2 $
+\end_inset
+
+ for other. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+svc
+\series default
+. (Ordinal) A rating for the service, from one to five 
+\begin_inset Quotes eld
+\end_inset
+
+stars.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+
+\series bold
+tip
+\series default
+. (Scale) The amount of tip left. 
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+rivers
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The Rivers dataset is a list of the lengths, in miles, of the longest 
+\begin_inset Formula $ 141 $
+\end_inset
+
+ rivers in the United States.
+\end_layout
+
+\begin_layout Quote
+
+\lang american
+
+\begin_inset Formula $ 135 $
+\end_inset
+
+, 
+\begin_inset Formula $ 202 $
+\end_inset
+
+, 
+\begin_inset Formula $ 210 $
+\end_inset
+
+, 
+\begin_inset Formula $ 210 $
+\end_inset
+
+, 
+\begin_inset Formula $ 215 $
+\end_inset
+
+, 
+\begin_inset Formula $ 217 $
+\end_inset
+
+, 
+\begin_inset Formula $ 230 $
+\end_inset
+
+, 
+\begin_inset Formula $ 230 $
+\end_inset
+
+, 
+\begin_inset Formula $ 233 $
+\end_inset
+
+, 
+\begin_inset Formula $ 237 $
+\end_inset
+
+, 
+\begin_inset Formula $ 246 $
+\end_inset
+
+, 
+\begin_inset Formula $ 250 $
+\end_inset
+
+, 
+\begin_inset Formula $ 250 $
+\end_inset
+
+, 
+\begin_inset Formula $ 250 $
+\end_inset
+
+, 
+\begin_inset Formula $ 255 $
+\end_inset
+
+, 
+\begin_inset Formula $ 259 $
+\end_inset
+
+, 
+\begin_inset Formula $ 260 $
+\end_inset
+
+, 
+\begin_inset Formula $ 260 $
+\end_inset
+
+, 
+\begin_inset Formula $ 265 $
+\end_inset
+
+, 
+\begin_inset Formula $ 268 $
+\end_inset
+
+, 
+\begin_inset Formula $ 270 $
+\end_inset
+
+, 
+\begin_inset Formula $ 276 $
+\end_inset
+
+, 
+\begin_inset Formula $ 280 $
+\end_inset
+
+, 
+\begin_inset Formula $ 280 $
+\end_inset
+
+, 
+\begin_inset Formula $ 280 $
+\end_inset
+
+, 
+\begin_inset Formula $ 281 $
+\end_inset
+
+, 
+\begin_inset Formula $ 286 $
+\end_inset
+
+, 
+\begin_inset Formula $ 290 $
+\end_inset
+
+, 
+\begin_inset Formula $ 291 $
+\end_inset
+
+, 
+\begin_inset Formula $ 300 $
+\end_inset
+
+, 
+\begin_inset Formula $ 300 $
+\end_inset
+
+, 
+\begin_inset Formula $ 300 $
+\end_inset
+
+, 
+\begin_inset Formula $ 301 $
+\end_inset
+
+, 
+\begin_inset Formula $ 306 $
+\end_inset
+
+, 
+\begin_inset Formula $ 310 $
+\end_inset
+
+, 
+\begin_inset Formula $ 310 $
+\end_inset
+
+, 
+\begin_inset Formula $ 314 $
+\end_inset
+
+, 
+\begin_inset Formula $ 315 $
+\end_inset
+
+, 
+\begin_inset Formula $ 320 $
+\end_inset
+
+, 
+\begin_inset Formula $ 325 $
+\end_inset
+
+, 
+\begin_inset Formula $ 327 $
+\end_inset
+
+, 
+\begin_inset Formula $ 329 $
+\end_inset
+
+, 
+\begin_inset Formula $ 330 $
+\end_inset
+
+, 
+\begin_inset Formula $ 332 $
+\end_inset
+
+, 
+\begin_inset Formula $ 336 $
+\end_inset
+
+, 
+\begin_inset Formula $ 338 $
+\end_inset
+
+, 
+\begin_inset Formula $ 340 $
+\end_inset
+
+, 
+\begin_inset Formula $ 350 $
+\end_inset
+
+, 
+\begin_inset Formula $ 350 $
+\end_inset
+
+, 
+\begin_inset Formula $ 350 $
+\end_inset
+
+, 
+\begin_inset Formula $ 350 $
+\end_inset
+
+, 
+\begin_inset Formula $ 352 $
+\end_inset
+
+, 
+\begin_inset Formula $ 360 $
+\end_inset
+
+, 
+\begin_inset Formula $ 360 $
+\end_inset
+
+, 
+\begin_inset Formula $ 360 $
+\end_inset
+
+, 
+\begin_inset Formula $ 360 $
+\end_inset
+
+, 
+\begin_inset Formula $ 375 $
+\end_inset
+
+, 
+\begin_inset Formula $ 377 $
+\end_inset
+
+, 
+\begin_inset Formula $ 380 $
+\end_inset
+
+, 
+\begin_inset Formula $ 380 $
+\end_inset
+
+, 
+\begin_inset Formula $ 383 $
+\end_inset
+
+, 
+\begin_inset Formula $ 390 $
+\end_inset
+
+, 
+\begin_inset Formula $ 390 $
+\end_inset
+
+, 
+\begin_inset Formula $ 392 $
+\end_inset
+
+, 
+\begin_inset Formula $ 407 $
+\end_inset
+
+, 
+\begin_inset Formula $ 410 $
+\end_inset
+
+, 
+\begin_inset Formula $ 411 $
+\end_inset
+
+, 
+\begin_inset Formula $ 420 $
+\end_inset
+
+, 
+\begin_inset Formula $ 420 $
+\end_inset
+
+, 
+\begin_inset Formula $ 424 $
+\end_inset
+
+, 
+\begin_inset Formula $ 425 $
+\end_inset
+
+, 
+\begin_inset Formula $ 430 $
+\end_inset
+
+, 
+\begin_inset Formula $ 431 $
+\end_inset
+
+, 
+\begin_inset Formula $ 435 $
+\end_inset
+
+, 
+\begin_inset Formula $ 444 $
+\end_inset
+
+, 
+\begin_inset Formula $ 445 $
+\end_inset
+
+, 
+\begin_inset Formula $ 450 $
+\end_inset
+
+, 
+\begin_inset Formula $ 460 $
+\end_inset
+
+, 
+\begin_inset Formula $ 460 $
+\end_inset
+
+, 
+\begin_inset Formula $ 465 $
+\end_inset
+
+, 
+\begin_inset Formula $ 470 $
+\end_inset
+
+, 
+\begin_inset Formula $ 490 $
+\end_inset
+
+, 
+\begin_inset Formula $ 500 $
+\end_inset
+
+, 
+\begin_inset Formula $ 500 $
+\end_inset
+
+, 
+\begin_inset Formula $ 505 $
+\end_inset
+
+, 
+\begin_inset Formula $ 524 $
+\end_inset
+
+, 
+\begin_inset Formula $ 525 $
+\end_inset
+
+, 
+\begin_inset Formula $ 525 $
+\end_inset
+
+, 
+\begin_inset Formula $ 529 $
+\end_inset
+
+, 
+\begin_inset Formula $ 538 $
+\end_inset
+
+, 
+\begin_inset Formula $ 540 $
+\end_inset
+
+, 
+\begin_inset Formula $ 545 $
+\end_inset
+
+, 
+\begin_inset Formula $ 560 $
+\end_inset
+
+, 
+\begin_inset Formula $ 570 $
+\end_inset
+
+, 
+\begin_inset Formula $ 600 $
+\end_inset
+
+, 
+\begin_inset Formula $ 600 $
+\end_inset
+
+, 
+\begin_inset Formula $ 600 $
+\end_inset
+
+, 
+\begin_inset Formula $ 605 $
+\end_inset
+
+, 
+\begin_inset Formula $ 610 $
+\end_inset
+
+, 
+\begin_inset Formula $ 618 $
+\end_inset
+
+, 
+\begin_inset Formula $ 620 $
+\end_inset
+
+, 
+\begin_inset Formula $ 625 $
+\end_inset
+
+, 
+\begin_inset Formula $ 630 $
+\end_inset
+
+, 
+\begin_inset Formula $ 652 $
+\end_inset
+
+, 
+\begin_inset Formula $ 671 $
+\end_inset
+
+, 
+\begin_inset Formula $ 680 $
+\end_inset
+
+, 
+\begin_inset Formula $ 696 $
+\end_inset
+
+, 
+\begin_inset Formula $ 710 $
+\end_inset
+
+, 
+\begin_inset Formula $ 720 $
+\end_inset
+
+, 
+\begin_inset Formula $ 720 $
+\end_inset
+
+, 
+\begin_inset Formula $ 730 $
+\end_inset
+
+, 
+\begin_inset Formula $ 735 $
+\end_inset
+
+, 
+\begin_inset Formula $ 735 $
+\end_inset
+
+, 
+\begin_inset Formula $ 760 $
+\end_inset
+
+, 
+\begin_inset Formula $ 780 $
+\end_inset
+
+, 
+\begin_inset Formula $ 800 $
+\end_inset
+
+, 
+\begin_inset Formula $ 840 $
+\end_inset
+
+, 
+\begin_inset Formula $ 850 $
+\end_inset
+
+, 
+\begin_inset Formula $ 870 $
+\end_inset
+
+, 
+\begin_inset Formula $ 890 $
+\end_inset
+
+, 
+\begin_inset Formula $ 900 $
+\end_inset
+
+, 
+\begin_inset Formula $ 900 $
+\end_inset
+
+, 
+\begin_inset Formula $ 906 $
+\end_inset
+
+, 
+\begin_inset Formula $ 981 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1000 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1038 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1054 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1100 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1171 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1205 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1243 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1270 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1306 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1450 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1459 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1770 $
+\end_inset
+
+, 
+\begin_inset Formula $ 1885 $
+\end_inset
+
+, 
+\begin_inset Formula $ 2315 $
+\end_inset
+
+, 
+\begin_inset Formula $ 2348 $
+\end_inset
+
+, 
+\begin_inset Formula $ 2533 $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Appendix B: Recoding Variables
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "app:b"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Background
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+For efficiency, data are often stored in a database in a format that does not lend itself to easy analysis. For example, nominative values, like 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+yes
+\begin_inset Quotes erd
+\end_inset
+
+ are frequently stored as 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+. While that is efficient for storage it makes using a table or chart more difficult because the various data elements will be presented as something like 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and it is incumbent upon the researcher to remember what the various codes mean; however, values in a dataset can be recoded to make them easier to use. As examples, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $ 0 / 1 $
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ values can be recoded to 
+\begin_inset Quotes eld
+\end_inset
+
+no/yes
+\begin_inset Quotes erd
+\end_inset
+
+ or a variable containing ages can be recoded so the ages are grouped, like ages 
+\begin_inset Formula $ 20 - 29 $
+\end_inset
+
+ can be recoded to 
+\begin_inset Formula $ 2 $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Recoding Variables With 
+\family typewriter
+SOFA
+\family default
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+In 
+\family typewriter
+SOFA
+\family default
+, a data field is recoded into a new field so the dataset ends up with two fields that contain the same data but in different formats. As an example, imagine that a researcher is using the 
+\begin_inset Quotes eld
+\end_inset
+
+spam
+\begin_inset Quotes erd
+\end_inset
+
+ field of the 
+\shape italic
+email
+\shape default
+ dataset and desires to use 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+yes,
+\begin_inset Quotes erd
+\end_inset
+
+ then that field would need to be recoded.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Start 
+\family typewriter
+SOFA
+\family default
+ and select 
+\begin_inset Quotes eld
+\end_inset
+
+Enter/Edit Data.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Data Tables: email 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Quotes eld
+\end_inset
+
+Design
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Click the 
+\begin_inset Quotes eld
+\end_inset
+
+Recode
+\begin_inset Quotes erd
+\end_inset
+
+ button on the Data Table screen 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+Fill in the 
+\begin_inset Quotes eld
+\end_inset
+
+Recode
+\begin_inset Quotes erd
+\end_inset
+
+ screen as illustrated below. (Note: since each row is saved as it is entered, the cursor must be moved into Row 
+\begin_inset Formula $ 3 $
+\end_inset
+
+, as illustrated, in order to save the changes made on Row 
+\begin_inset Formula $ 2 $
+\end_inset
+
+).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%      
+\backslash
+fbox{
+\backslash
+includegraphics[width=
+\backslash
+linewidth]{gfx/apb005}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Recoding Spam Field
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang american
+Click 
+\begin_inset Quotes eld
+\end_inset
+
+Recode
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang american
+The following message will be displayed
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%      
+\backslash
+fbox{
+\backslash
+includegraphics[]{gfx/apb010}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Recode Warning on Save
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang american
+Click OK to dismiss the warning, click OK to complete the recode, and then click 
+\begin_inset Quotes eld
+\end_inset
+
+Update
+\begin_inset Quotes erd
+\end_inset
+
+ to file the results of the recode process.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+When this process is completed the 
+\shape italic
+email
+\shape default
+ dataset will contain a new field named 
+\begin_inset Quotes eld
+\end_inset
+
+spamnum
+\begin_inset Quotes erd
+\end_inset
+
+ that contains a 
+\begin_inset Formula $ 0 $
+\end_inset
+
+ where 
+\begin_inset Quotes eld
+\end_inset
+
+spam
+\begin_inset Quotes erd
+\end_inset
+
+ is equal to 
+\begin_inset Quotes eld
+\end_inset
+
+no
+\begin_inset Quotes erd
+\end_inset
+
+ and a 
+\begin_inset Formula $ 1 $
+\end_inset
+
+ where 
+\begin_inset Quotes eld
+\end_inset
+
+spam
+\begin_inset Quotes erd
+\end_inset
+
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+yes.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang american
+Appendix C: SOFA Exports
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset CommandInset label
+LatexCommand label
+name "app:c"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\family typewriter
+SOFA
+\family default
+ creates several different types of exports and each are easy to generate and use. Export specifications are set in the area across the center of the various pop-up windows (Report Tables, Charts, and Statistics) and generating reports is the same for all of the windows.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Styles
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\family typewriter
+SOFA
+\family default
+ comes with seven built-in styles that can be selected from the box on the bottom-right of the window:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%    
+\backslash
+fbox{
+\backslash
+includegraphics[]{gfx/apc005}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+SOFA Styles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+As each style is selected the display in the lower-left corner of the window is immediately updated to reflect the selected style.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Exporting a File
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The output in the lower-left corner of the window can be exported in a file that can be opened by a program like Excel. In the Export drop-down box at the right-center of the window select 
+\begin_inset Quotes eld
+\end_inset
+
+Current Output
+\begin_inset Quotes erd
+\end_inset
+
+ and then click the 
+\begin_inset Quotes eld
+\end_inset
+
+Export
+\begin_inset Quotes erd
+\end_inset
+
+ button.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%    
+\backslash
+fbox{
+\backslash
+includegraphics[]{gfx/apc010}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Selecting Export Type
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Select the specific type of output desired in the pop-up window.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+
+\begin_layout Standard
+
+\lang american
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%    
+\backslash
+fbox{
+\backslash
+includegraphics[]{gfx/apc015}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang american
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Specifying Desired Export
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Export as PDF. This option will generate a PDF file containing the current output. Note that a number of different outputs can be combined into a single PDF file by using the 
+\begin_inset Quotes eld
+\end_inset
+
+Report
+\begin_inset Quotes erd
+\end_inset
+
+ feature, described below. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Export to spreadsheet (report tables only). This generates an Excel spreadsheet without any formatting. This is an excellent option if the data produced by 
+\family typewriter
+SOFA
+\family default
+ needs further manipulation. 
+\end_layout
+
+\begin_layout Itemize
+
+\lang american
+Export as Images. 
+\family typewriter
+SOFA
+\family default
+ will export the output as .PNG images that can be used in other programs or emailed. The quality of the image can be selected using the drop-down box. (NOTE: for most work the 
+\begin_inset Quotes eld
+\end_inset
+
+Print Quality (300 dpi)
+\begin_inset Quotes erd
+\end_inset
+
+ setting is adequate.) 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Click the 
+\begin_inset Quotes eld
+\end_inset
+
+Export
+\begin_inset Quotes erd
+\end_inset
+
+ button to generate the desired export file.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Copy/Paste Output
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+In the dropdown 
+\begin_inset Quotes eld
+\end_inset
+
+Export
+\begin_inset Quotes erd
+\end_inset
+
+ box, select 
+\begin_inset Quotes eld
+\end_inset
+
+Copy current output ready to paste
+\begin_inset Quotes erd
+\end_inset
+
+ to copy the output displayed in the lower left corner of the window so it can be pasted directly into Word or some other program.
+\end_layout
+
+\begin_layout Subsection
+
+\lang american
+Reports
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+
+\family typewriter
+SOFA
+\family default
+ can combine the outputs for several operations into a single PDF report or series of .PNG files. This is a two-step process, first the various outputs are saved into a report and, second, the final report is exported.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+To save the outputs into a single report, start by specifying the location and name for the report. By default, 
+\family typewriter
+SOFA
+\family default
+ saves reports in the 
+\shape italic
+sofastats/reports
+\shape default
+ folder and that is appropriate since 
+\family typewriter
+SOFA
+\family default
+ can generate a number of files when producing a report. To specify the name for a new report, click the 
+\begin_inset Quotes eld
+\end_inset
+
+Browse
+\begin_inset Quotes erd
+\end_inset
+
+ button and enter the report's name (it is the file name). 
+\family typewriter
+SOFA
+\family default
+ saves reports in .HTM format but a different format can be specified when the report is later exported.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Then, as outputs are produced, click the 
+\begin_inset Quotes eld
+\end_inset
+
+Also add to report
+\begin_inset Quotes erd
+\end_inset
+
+ button to add the current output, displayed in the lower-left corner of the window, to the report. Note: every time the 
+\begin_inset Quotes eld
+\end_inset
+
+Also add to report
+\begin_inset Quotes erd
+\end_inset
+
+ button is clicked the current output is added to the report so avoid clicking that button multiple times unless multiple copies of the current output are desired.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+To export the report, select 
+\begin_inset Quotes eld
+\end_inset
+
+Entire Report
+\begin_inset Quotes erd
+\end_inset
+
+ in the export drop-down box. Select the format for the report (PDF, images, or Excel Spreadsheet) and click 
+\begin_inset Quotes eld
+\end_inset
+
+Export.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+Note: SOFA exports PDF files such that each saved output screen is on a different PDF page, which makes the PDF file rather long with a lot of blank space between pages. As an alternative, it may be possible to click the 
+\begin_inset Quotes eld
+\end_inset
+
+View Report
+\begin_inset Quotes erd
+\end_inset
+
+ button to open the report in a browser and then use the browser's print feature.
+\end_layout
+
+\end_body
+\end_document
